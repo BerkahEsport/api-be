@@ -1,5 +1,5 @@
 [
-	{"1" : {
+	{"1" : [{
 		"name": "Nabi Adam AS",
 		"thn_kelahiran": "5876",
 		"usia": "950",
@@ -7,8 +7,8 @@
 		"tmp": "Arab dan India",
 		"image_url":"http://2.bp.blogspot.com/-sOTZoLQJ2uI/Vn1esaZjZsI/AAAAAAAABtw/bHL85uduUaI/s320/adam%2Bkecil.png",
 		"icon_url":""
-		},
-	 "2" : {
+	}],
+	 "2" : [{
 		"name": "Nabi Idris AS",
 		"thn_kelahiran": "4533",
 		"usia": 345,
@@ -16,7 +16,7 @@
 		"tmp": "Irak Kuno dan Mesir",
 		"image_url":"http://3.bp.blogspot.com/-AANTKez6zI4/Vn3XsgG77GI/AAAAAAAABu4/YAU28xuT8Ls/s320/idris.png",
 		"icon_url":""
-	},
+	}],
 	"3" : {
 		"name": "Nabi Nuh AS",
 		"thn_kelahiran": "3993",
