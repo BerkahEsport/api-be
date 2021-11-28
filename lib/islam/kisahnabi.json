@@ -7,7 +7,7 @@
 		"tmp": "Arab dan India",
 		"image_url":"http://2.bp.blogspot.com/-sOTZoLQJ2uI/Vn1esaZjZsI/AAAAAAAABtw/bHL85uduUaI/s320/adam%2Bkecil.png",
 		"icon_url":""
-	},
+	}},
 	 {"2" : {
 		"name": "Nabi Idris AS",
 		"thn_kelahiran": "4533",
@@ -16,7 +16,7 @@
 		"tmp": "Irak Kuno dan Mesir",
 		"image_url":"http://3.bp.blogspot.com/-AANTKez6zI4/Vn3XsgG77GI/AAAAAAAABu4/YAU28xuT8Ls/s320/idris.png",
 		"icon_url":""
-	},
+	}},
 	{"3" : {
 		"name": "Nabi Nuh AS",
 		"thn_kelahiran": "3993",
@@ -25,7 +25,7 @@
 		"tmp": "Selatan Irak",
 		"image_url":"http://1.bp.blogspot.com/-MT02CHD7Vx4/Vn3XqrZiTxI/AAAAAAAABuU/4dU7ZKbluWo/s320/buh.png",
 		"icon_url":""
-	},
+	}},
 	 {"4" : {
 		"name": "Nabi Hud AS",
 		"thn_kelahiran": "2450",
@@ -34,7 +34,7 @@
 		"tmp": "Antara Yaman dan Oman",
 		"image_url":"http://4.bp.blogspot.com/-xug_qsIwLmI/Vn3XsE_FJ2I/AAAAAAAABus/vx0OP5-WrMM/s320/hud.png",
 		"icon_url":""
-	},
+	}},
 	{"5" : {
 		"name": "Nabi Sholeh AS",
 		"thn_kelahiran": "2450",
@@ -43,7 +43,7 @@
 		"tmp": "Antara Madinah dan Syria",
 		"image_url":"http://2.bp.blogspot.com/-KeSIiNdTXFE/Vn3Xu5FXfwI/AAAAAAAABv4/aKweUbeik6o/s320/sholeh.png",
 		"icon_url":""
-	},
+	}},
 	 {"6" : {
 		"name": "Nabi Ibrahim AS",
 		"thn_kelahiran": "1997",
@@ -52,7 +52,7 @@
 		"tmp": "Irak",
 		"image_url":"http://4.bp.blogspot.com/-jq5RqrQl-P4/Vn3Xsq-XygI/AAAAAAAABu0/leVFkNEfa5U/s320/ibrahim.png",
 		"icon_url":""
-	},
+	}},
 	{"7" : {
 		"name": "Nabi Ismail AS",
 		"thn_kelahiran": "1911",
@@ -61,7 +61,7 @@
 		"tmp": "Mekkah",
 		"image_url":"http://3.bp.blogspot.com/-_cSIg5N6o5s/Vn3Xt49ILtI/AAAAAAAABvs/OKpPE7lNmt0/s320/ismail.png",
 		"icon_url":""
-	},
+	}},
 	 {"8" : {
 		"name": "Nabi Luth AS",
 		"thn_kelahiran": "1897",
@@ -70,7 +70,7 @@
 		"tmp": "Sodom dan Amurah",
 		"image_url":"http://1.bp.blogspot.com/-u4aHo7te6ZA/Vn3Xt1adoeI/AAAAAAAABvo/rvMA3NOokqc/s320/lut.png",
 		"icon_url":""
-	},
+	}},
 	{"9" : {
 		"name": "Nabi Ishaq AS",
 		"thn_kelahiran": "1897",
@@ -79,7 +79,7 @@
 		"tmp": "Kan'an",
 		"image_url":"http://1.bp.blogspot.com/-dpOj5gl9oBE/Vn3XtbntpadaI/AAAAAAAABvQ/Enz0bRle2xw/s320/ishaq.png",
 		"icon_url":""
-	},
+	}},
 	 {"10" : {
 		"name": "Nabi Yaqub AS",
 		"thn_kelahiran": "1837",
@@ -88,7 +88,7 @@
 		"tmp": "Syam",
 		"image_url":"http://2.bp.blogspot.com/-nVw790eRAqE/Vn3XvxpJ6CI/AAAAAAAABwY/9AuuuqJHwGA/s320/yaqub.png",
 		"icon_url":""
-	},
+	}},
 	{"11" : {
 		"name": "Nabi Yusuf AS",
 		"thn_kelahiran": "1745",
@@ -97,7 +97,7 @@
 		"tmp": "Mesir",
 		"image_url":"http://3.bp.blogspot.com/-GIMfMoW53Nc/Vn3Xwbp0WxI/AAAAAAAABwo/1-K1MvB70Hc/s320/yusuf.png",
 		"icon_url":""
-	},
+	}},
 	 {"12" : {
 		"name": "Nabi Syu'aib AS",
 		"thn_kelahiran": "1600",
@@ -106,7 +106,7 @@
 		"tmp": "Madyan",
 		"image_url":"http://1.bp.blogspot.com/-jWTANvPgvPc/Vn3XvtFck1I/AAAAAAAABwQ/Y-wlkjmyNck/s320/syuaib.png",
 		"icon_url":""
-	},
+	}},
 	{"13" : {
 		"name": "Nabi Ayyub AS",
 		"thn_kelahiran": "1540",
@@ -115,7 +115,7 @@
 		"tmp": "Dataran Hauran",
 		"image_url":"http://1.bp.blogspot.com/-SxnAwMLo75k/Vn3XqcJWj_I/AAAAAAAABuQ/tL7ZpXcyXo8/s320/ayyub.png",
 		"icon_url":""
-	},
+	}},
 	 {"14" : {
 		"name": "Nabi Dzulkifli AS",
 		"thn_kelahiran": "1500",
@@ -124,7 +124,7 @@
 		"tmp": "Damaskus",
 		"image_url":"http://1.bp.blogspot.com/-Y4pUQQOC6FU/Vn3Xr-cgxcI/AAAAAAAABuo/Lpz8KUaXUZU/s320/dzulkifli.png",
 		"icon_url":""
-	},
+	}},
 	{"15" : {
 		"name": "Nabi Musa AS (Part 1)",
 		"thn_kelahiran": "1527",
@@ -133,7 +133,7 @@
 		"tmp": "Sinai di Mesir",
 		"image_url":"http://1.bp.blogspot.com/-6vR18iLMa1I/Vn3XuoEY2uI/AAAAAAAABv0/Wxq1kEQkTb8/s320/musa.png",
 		"icon_url":""
-	},
+	}},
 	 {"151" : {
 		"name": "Nabi Musa AS (Part 2)",
 		"thn_kelahiran": "1500",
@@ -142,7 +142,7 @@
 		"tmp": "Sinai di Mesir",
 		"image_url":"http://1.bp.blogspot.com/-6vR18iLMa1I/Vn3XuoEY2uI/AAAAAAAABv0/Wxq1kEQkTb8/s320/musa.png",
 		"icon_url":""
-	},
+	}},
 	{"152" : {
 		"name": "Nabi Musa AS (Part 3)",
 		"thn_kelahiran": "1500",
@@ -151,7 +151,7 @@
 		"tmp": "Sinai di Mesir",
 		"image_url":"http://1.bp.blogspot.com/-6vR18iLMa1I/Vn3XuoEY2uI/AAAAAAAABv0/Wxq1kEQkTb8/s320/musa.png",
 		"icon_url":""
-	},
+	}},
 	 {"153" : {
 		"name": "Nabi Musa AS (Part 4)",
 		"thn_kelahiran": "1500",
@@ -160,7 +160,7 @@
 		"tmp": "Sinai di Mesir",
 		"image_url":"http://1.bp.blogspot.com/-6vR18iLMa1I/Vn3XuoEY2uI/AAAAAAAABv0/Wxq1kEQkTb8/s320/musa.png",
 		"icon_url":""
-	},
+	}},
 	{"16" : {
 		"name": "Nabi Harun AS",
 		"thn_kelahiran": "1531",
@@ -169,7 +169,7 @@
 		"tmp": "Sinai di Mesir",
 		"image_url":"http://4.bp.blogspot.com/-YMx-cSnBHBs/Vn3XsAoDJHI/AAAAAAAABuw/WiRXIl4XwV0/s320/harun.png",
 		"icon_url":""
-	},
+	}},
 	 {"17" : {
 		"name": "Nabi Daud AS",
 		"thn_kelahiran": "1063",
@@ -178,7 +178,7 @@
 		"tmp": "Palestina",
 		"image_url":"http://3.bp.blogspot.com/-JBkfCFVhupM/Vn3XquoyDoI/AAAAAAAABuY/f5IApOJIToU/s320/daud.png",
 		"icon_url":""
-	},
+	}},
 	{"18" : {
 		"name": "Nabi Sulaiman AS",
 		"thn_kelahiran": "989",
@@ -187,7 +187,7 @@
 		"tmp": "Palestina",
 		"image_url":"http://1.bp.blogspot.com/-gFb2lkkbmfw/Vn3XvNWIkwI/AAAAAAAABwE/LvEuIDinnPk/s320/sulaiman.png",
 		"icon_url":""
-	},
+	}},
 	 {"19" : {
 		"name": "Nabi Ilyas AS",
 		"thn_kelahiran": "910",
@@ -196,7 +196,7 @@
 		"tmp": "Lebanon",
 		"image_url":"http://1.bp.blogspot.com/-iRWu-y6rYyY/Vn3Xs-KQ1UI/AAAAAAAABvA/_wtEI5XMLE8/s320/ilyas.png",
 		"icon_url":""
-	},
+	}},
 	{"20" : {
 		"name": "Nabi Ilyasa' AS",
 		"thn_kelahiran": "885",
@@ -205,7 +205,7 @@
 		"tmp": "Damaskus",
 		"image_url":"http://3.bp.blogspot.com/-bR3PEHujmUU/Vn3XtNGYhwI/AAAAAAAABvI/jfYCdJ7pW4I/s320/ilyasa.png",
 		"icon_url":""
-	},
+	}},
 	 {"21" : {
 		"name": "Nabi Yunus AS",
 		"thn_kelahiran": "820",
@@ -214,7 +214,7 @@
 		"tmp": "Ninawa, Irak",
 		"image_url":"http://2.bp.blogspot.com/-RUZFmPJbyZ8/Vn3XwN7hmEI/AAAAAAAABwc/SjAXv6G932U/s320/yunus.png",
 		"icon_url":""
-	},
+	}},
 	{"22" : {
 		"name": "Nabi Zakariya AS",
 		"thn_kelahiran": "91",
@@ -223,7 +223,7 @@
 		"tmp": "Palestina",
 		"image_url":"http://1.bp.blogspot.com/-uQvi9QvNsiA/Vn3XwjaA3bI/AAAAAAAABws/CQH8yTwScQQ/s320/zakariya.png",
 		"icon_url":""
-	},
+	}},
 	 {"23" : {
 		"name": "Nabi Yahya AS",
 		"thn_kelahiran": "1",
@@ -232,7 +232,7 @@
 		"tmp": "Palestina",
 		"image_url":"http://2.bp.blogspot.com/-2uXO6JdmzZI/Vn3XvYkHS5I/AAAAAAAABwI/zhl7Mm1YXYo/s320/yahya.png",
 		"icon_url":""
-	},
+	}},
 	{"24" : {
 		"name": "Nabi Isa AS",
 		"thn_kelahiran": "1",
@@ -241,7 +241,7 @@
 		"tmp": "Palestina",
 		"image_url":"http://2.bp.blogspot.com/-W72aOD6Bjeo/Vn3XtDdVGJI/AAAAAAAABvM/8p4JObUB8Oc/s320/isa.png",
 		"icon_url":""
-	},
+	}},
 	 {"25" : {
 		"name": "Nabi Muhammad SAW",
 		"thn_kelahiran": "570",
@@ -250,6 +250,5 @@
 		"tmp": "Mekkah",
 		"image_url":"http://2.bp.blogspot.com/-fn_NMHe1svk/Vn3XuIdeeUI/AAAAAAAABvk/86DPb6Msvps/s320/muhammad.png",
 		"icon_url":""
-	}}}}}}}}}}}}}}}}}}}}}}}}}
-}
+	}}
 ]
