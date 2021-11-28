@@ -17,7 +17,7 @@
 		"image_url":"http://3.bp.blogspot.com/-AANTKez6zI4/Vn3XsgG77GI/AAAAAAAABu4/YAU28xuT8Ls/s320/idris.png",
 		"icon_url":""
 	}],
-	"3" : {
+	"3" : [{
 		"name": "Nabi Nuh AS",
 		"thn_kelahiran": "3993",
 		"usia": 950,
@@ -25,8 +25,8 @@
 		"tmp": "Selatan Irak",
 		"image_url":"http://1.bp.blogspot.com/-MT02CHD7Vx4/Vn3XqrZiTxI/AAAAAAAABuU/4dU7ZKbluWo/s320/buh.png",
 		"icon_url":""
-	},
-	 "4" : {
+	}],
+	 "4" : [{
 		"name": "Nabi Hud AS",
 		"thn_kelahiran": "2450",
 		"usia": 130,
@@ -34,7 +34,7 @@
 		"tmp": "Antara Yaman dan Oman",
 		"image_url":"http://4.bp.blogspot.com/-xug_qsIwLmI/Vn3XsE_FJ2I/AAAAAAAABus/vx0OP5-WrMM/s320/hud.png",
 		"icon_url":""
-	},
+	}],
 "5" : {
 		"name": "Nabi Sholeh AS",
 		"thn_kelahiran": "2450",
