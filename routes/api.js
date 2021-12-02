@@ -1866,7 +1866,7 @@ router.get('/muslim/niatshalat', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/dataNiatShalat.json`))
+       fetch(encodeURI(`https://github.com/BerkahEsport/api-be/blob/main/lib/islam/niatshalat/niatshalat.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
