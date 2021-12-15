@@ -1,0 +1,26 @@
+[
+  { "index": "0",
+    "flag": "AF",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/22px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png",
+    "name": "Afganistan"
+  },
+  { "index": "1",
+    "flag": "ZA",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/22px-Flag_of_South_Africa.svg.png",
+    "name": "Afrika Selatan"
+  },
+  { "index": "2",
+    "flag": "CF",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Central_African_Republic.svg/22px-Flag_of_the_Central_African_Republic.svg.png",
+    "name": "Afrika Tengah"
+  },
+  { "index": "3",
+    "flag": "AX",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Flag_of_%C3%85land.svg/22px-Flag_of_%C3%85land.svg.png",
+    "name": "Åland"
+  },
+  { "index": "4",
+    "flag": "AL",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/22px-Flag_of_Albania.svg.png",
+    "name": "Albania"
+  }]
