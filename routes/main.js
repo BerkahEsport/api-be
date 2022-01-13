@@ -16,7 +16,7 @@ router.get('/api/about', (req, res) => {
 })
 
 router.get('/api/news', (req, res) => {
-    res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
+    res.redirect('https://api-berita-indonesia.vercel.app/cnn/terbaru')
 })
 
 router.get('/config', (req, res) => {

@@ -27,8 +27,8 @@ var { fetchJson } = require(__path + '/lib/fetcher.js')
 var options = require(__path + '/lib/options.js');
 var {
 	Vokal,
-	
-	
+	search,
+	detail,
 	Base,
 	Searchnabi,
     Gempa
@@ -1200,7 +1200,7 @@ router.get('/nulis', async (req, res, next) => {
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
     if (!text) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter text"})
 
-       fetch(encodeURI(`http://salism3.pythonanywhere.com/write/?text=${text}`))
+       fetch(encodeURI(`https://api.zeks.xyz/api/nulis?apikey=AriaGanzTzy&text=${text}`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -1926,7 +1926,7 @@ router.get('/muslim/niatshubuh', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/NiatShubuh.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/islam/niatshalat/shubuh.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -1946,7 +1946,7 @@ router.get('/muslim/niatdzuhur', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/NiatDzuhur.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/islam/niatshalat/dzuhur.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -1966,7 +1966,7 @@ router.get('/muslim/niatmaghrib', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/NiatMaghrib.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/islam/niatshalat/maghrib.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -1986,7 +1986,7 @@ router.get('/muslim/niatisya', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/NiatIsya.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/islam/niatshalat/isya.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2006,7 +2006,7 @@ router.get('/muslim/niatashar', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/NiatAshar.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/islam/niatshalat/ashar.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2066,11 +2066,13 @@ router.get('/wallpaper/muslim', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Islamic.json`))
-        .then(response => response.json())
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/image/renungan.txt`))
+        .then(response => response.txt())
+        .then(txt => renungan = txt.split(" "))
+        var dataa = renungan[Math.floor((Math.random() * renungan.length))]
         .then(data => {
-        var result = data;
-             res.json({
+        var result = dataa;
+             data({
                  result
              })
          })
@@ -2128,7 +2130,7 @@ router.get('/wikipedia', async (req, res, next) => {
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter search"})
 
-       fetch(encodeURI(`https://docs-api-moextir.herokuapp.com/api/wiki?keyword=${search}`))
+       fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/wiki?q=${search}`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2147,7 +2149,7 @@ router.get('/randomquote/muslim', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://docs-api-moextir.herokuapp.com/api/quote?type=agamis`))
+       fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/randomquotes`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2624,7 +2626,7 @@ router.get('/kuis/caklontong', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://docs-api-moextir.herokuapp.com/api/quote?type=caklontong`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/games/caklontong.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2644,7 +2646,7 @@ router.get('/kuis/tebakgambar', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://docs-api-moextir.herokuapp.com/api/quote?type=tebakgambar`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/game/tebakgambar.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -3211,6 +3213,51 @@ router.get('/textmaker/roses', async (req, res, next) => {
         } else {
             res.json(loghandler.error)
         }
+})
+//DOWNLOADER
+
+router.get('/xnxx/search', async (req, res, next) => {
+    var apikeyInput = req.query.apikey,
+        text = req.query.text
+        
+if(!apikeyInput) return res.json(loghandler.notparam)
+if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
+if (!text) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter text"})
+
+   search(text)
+    .then(response => response.json())
+    .then(data => {
+    var result = data;
+         res.json({
+             author: '@moexti',
+             result
+         })
+     })
+     .catch(e => {
+         res.json(loghandler.error)
+})
+})
+
+router.get('/xnxx/dl', async (req, res, next) => {
+    var apikeyInput = req.query.apikey,
+        url = req.query.url
+        
+if(!apikeyInput) return res.json(loghandler.notparam)
+if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
+if (!url) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter url"})
+
+   detail(url)
+    .then(response => response.json())
+    .then(data => {
+    var result = data;
+         res.json({
+             author: '@moexti',
+             result
+         })
+     })
+     .catch(e => {
+         res.json(loghandler.error)
+})
 })
 
 router.get('/yutub/video', async (req, res, next) => {
