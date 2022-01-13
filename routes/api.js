@@ -280,7 +280,7 @@ router.get('/china', async (req, res, next) => {
     data = await fetch(hasil).then(v => v.buffer())
     await fs.writeFileSync(__path +'/tmp/gambar.jpg', data)
     res.sendFile(__path +'/tmp/gambar.jpg')
-  } else {
+  } else { 
     res.json(loghandler.invalidKey)
   }
 })
