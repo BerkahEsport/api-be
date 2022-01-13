@@ -3224,7 +3224,7 @@ if(!apikeyInput) return res.json(loghandler.notparam)
 if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 if (!text) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter text"})
 
-   search(text)
+   xnxxsearch(text)
     .then(response => response.json())
     .then(data => {
     var result = data;
@@ -3246,7 +3246,7 @@ if(!apikeyInput) return res.json(loghandler.notparam)
 if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 if (!url) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter url"})
 
-   detail(url)
+   xnxxdl(url)
     .then(response => response.json())
     .then(data => {
     var result = data;
