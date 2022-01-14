@@ -43,7 +43,9 @@
     "tiktok-scraper": "^1.4.12",
     "urlencode": "^1.1.0",
     "ytdl-core": "^4.4.5",
-    "ytpl": "^2.0.5"
+    "ytpl": "^2.0.5",
+    "@justalk/pornhub-api": "^3.5.0",
+    "porn-lib": "^1.4.1"
   },
   "homepage": "https://github.com/BerkahEsport/apiberkahesport#readme"
 }
