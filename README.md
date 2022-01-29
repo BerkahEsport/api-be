@@ -43,11 +43,10 @@
       <div class="text-center">
         <img src="https://i.ibb.co/VQQ68JS/berkahesport.jpg" class="rounded-circle shadow mb-3" alt="Space" width="150px" height="150px">
       </div>
-        <p class="card-text text-shadow">Web API Ini dibuat sepenuhnya oleh moexti.<br/>Saya juga masih pemula.<br/>Masih belajar tentang programming<br/>
-        Terimakasih Untuk <b>ALLAH S.W.T.</b><br/>Serta junjungan kami nabi Muhammad S.A.W</p>
+        <p class="card-text text-shadow">
+        Terimakasih Untuk <b>ALLAH S.W.T.</b><br/>Serta junjungan kami nabi Muhammad S.A.W</p>Web API Ini dibuat sepenuhnya oleh moexti.<br/>Saya juga masih pemula.<br/>Masih belajar tentang programming
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
