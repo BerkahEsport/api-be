@@ -43,8 +43,8 @@
       <div class="text-center">
         <img src="https://i.ibb.co/VQQ68JS/berkahesport.jpg" class="rounded-circle shadow mb-3" alt="Space" width="150px" height="150px">
       </div>
-        <p class="card-text text-shadow">Web API Ini dibuat sepenuhnya oleh moexti.<br/>Saya hanya mencoba untuk mengembangkannya.<br/>Dan saya juga masih pemula.<br/>Masih belajar tentang programming<br/>
-        Terimakasih Untuk <b>Tri Prabowo Mukti.</b><br/>Sekali lagi saya mengucapkan Terimakasih.</p>
+        <p class="card-text text-shadow">Web API Ini dibuat sepenuhnya oleh moexti.<br/>Saya juga masih pemula.<br/>Masih belajar tentang programming<br/>
+        Terimakasih Untuk <b>ALLAH S.W.T.</b><br/>Serta junjungan kami nabi Muhammad S.A.W</p>
       </div>
     </div>
   </div>
