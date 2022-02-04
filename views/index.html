@@ -952,8 +952,8 @@ body
                       <input type="number" name="id" id="id" class="form-control form-control-lg shadow-none w-25 auto-save" placeholder="ID Game" required>
                       <input type="number" name="server" id="server" class="form-control form-control-lg shadow-none auto-save" placeholder="( Server ) " required>
                       </div>
-                  <strong class="text-dark rounded px-2 py-1 mt-2 bg-light-purple" data-nickname="undefined" id="userinfo" style="display: none;"></strong>
-                  <strong class="text-dark rounded px-2 py-1 mt-2 bg-light-purple" data-userid="undefined" id="tipeakun" style="display: none;"></strong>
+                  <strong class="text-dark rounded px-2 py-1 mt-2 bg-light-purple" data-user="undefined" id="userinfo" style="display: none;"></strong>
+                  <strong class="text-dark rounded px-2 py-1 mt-2 bg-light-purple" data-tipeakun="undefined" id="tipeakun" style="display: none;"></strong>
                   </div>
               </div>
             </div>    
@@ -1679,8 +1679,8 @@ window.addEventListener("load", function() {
   var tipe_akun = data.userid;
    
       if (data.status == "ok") {
-      $('#userinfo').attr('data-nickname',  nama_akun );
-      $('#tipeakun').attr('data-userid',  tipe_akun );
+      $('#userinfo').attr('data-user',  nama_akun );
+      $('#tipeakun').attr('data-tipeakun',  tipe_akun );
       $('#confrimModal').modal('show');
       }
                       
@@ -1728,7 +1728,7 @@ $('#send').click(function() {
       let nick_name;
       id = encodeURI($('#id').val() + '(' + $('#server').val() + ')');
       nick = encodeURI($('#userinfo').data('nickname'));
-      region = encodeURI($('#tipeakun').data('userid');
+      region = encodeURI($('#tipeakun').data('userid'));
 
       if (game == 'ml') { game_name = 'Mobile%20Legends'; }
       if (game == 'mlx') { game_name = 'Mobile%20Legends%20Bang%20Bang'; }
