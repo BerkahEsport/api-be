@@ -1669,14 +1669,14 @@ window.addEventListener("load", function() {
   data: $('#form').serialize(),
   beforeSend: function() {
   $('#loading').show();
-  $('#id, #server').removeClass('is-invalid');
+  $('#id, #server');
   },
                   
   success: function(data) {
   $('#loading').hide();
                       
-  var nama_akun = data.nama;
-  var tipe_akun = data.tipe_akun;
+  var nama_akun = data.nickname;
+  var tipe_akun = data.userid;
    
       if (data.status == "ok") {
       $('#userinfo').attr('data-user',  nama_akun );
