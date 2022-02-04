@@ -1664,7 +1664,7 @@ window.addEventListener("load", function() {
                   
   $.ajax({
    url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $('#id') + "&zone=" + $('#server'),                         
-  method: "post",
+  method: "GET",
   dataType: 'JSON',
   data: $('#form').serialize(),
   beforeSend: function() {
@@ -1678,13 +1678,13 @@ window.addEventListener("load", function() {
   var nama_akun = data.nickname;
   var tipe_akun = data.userid;
    
-      if (data.status == "ok") {
+      if (data.result.status == "200") {
       $('#userinfo').attr('data-user',  nama_akun );
       $('#tipeakun').attr('data-tipeakun',  tipe_akun );
       $('#confrimModal').modal('show');
       }
                       
-      else if(data.status == "error") {
+      else if(data.result.status == "404") {
       $('#errorModal').modal('show');
       }
       },
