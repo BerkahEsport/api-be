@@ -1482,36 +1482,31 @@ body
             </div>
             <div class="modal-body">
                 <table class="table table-borderless">
-                    <tr>
-                        <td>ID(Server)</td>
-                        <td width='3px'>: </td>
-                        <td id="info2"></td>
-                    </tr>
-                                        <tr>
-                        <td>Nick</td>
-                        <td width='3px'>: </td>
-                        <td id="info3"></td>
-                    </tr>
-                                        <tr>
-                        <td>Region</td>
-                        <td width='3px'>: </td>
-                        <td id="infoxx"></td>
-                    </tr>
-                    <tr>
-                        <td>Order</td>
-                        <td width='3px'>: </td>
-                        <td id="info4"></td>
-                    </tr>
-                    <tr>
-                        <td>Harga</td>
-                        <td width='3px'>: </td>
-                        <td id="info5"></td>
-                    </tr>
-                    <tr>
-                        <td>Pembayaran</td>
-                        <td width='3px'>: </td>
-                        <td id="info6"></td>
-                     </tr>
+                  <tr>
+                    <td>ID(Server)</td>
+                    <td width='3px'>: </td>
+                    <td >hidserver</td>
+                </tr>
+                                    <tr>
+                    <td>Nick</td>
+                    <td width='3px'>: </td>
+                    <td id="hnickname"></td>
+                </tr>
+                <tr>
+                    <td>Order</td>
+                    <td width='3px'>: </td>
+                    <td >horder</td>
+                </tr>
+                <tr>
+                    <td>Harga</td>
+                    <td width='3px'>: </td>
+                    <td>hprice</td>
+                </tr>
+                <tr>
+                    <td>Pembayaran</td>
+                    <td width='3px'>: </td>
+                    <td >hbayar</td>
+                 </tr>
                 </table>
                 <p id="info7"></p>
             </div>
@@ -1534,36 +1529,31 @@ body
             </div>
             <div class="modal-body">
                 <table class="table table-borderless">
-                    <tr>
-                        <td>ID(Server)</td>
-                        <td width='3px'>: </td>
-                        <td id="info2"></td>
-                    </tr>
-                                        <tr>
-                        <td>Nick</td>
-                        <td width='3px'>: </td>
-                        <td id="info3"></td>
-                    </tr>
-                                        <tr>
-                        <td>Region</td>
-                        <td width='3px'>: </td>
-                        <td id="infoxx"></td>
-                    </tr>
-                    <tr>
-                        <td>Order</td>
-                        <td width='3px'>: </td>
-                        <td id="info4"></td>
-                    </tr>
-                    <tr>
-                        <td>Harga</td>
-                        <td width='3px'>: </td>
-                        <td id="info5"></td>
-                    </tr>
-                    <tr>
-                        <td>Pembayaran</td>
-                        <td width='3px'>: </td>
-                        <td id="info6"></td>
-                     </tr>
+                  <tr>
+                    <td>ID(Server)</td>
+                    <td width='3px'>: </td>
+                    <td >hidserver</td>
+                </tr>
+                                    <tr>
+                    <td>Nick</td>
+                    <td width='3px'>: </td>
+                    <td id="hnickname"></td>
+                </tr>
+                <tr>
+                    <td>Order</td>
+                    <td width='3px'>: </td>
+                    <td >horder</td>
+                </tr>
+                <tr>
+                    <td>Harga</td>
+                    <td width='3px'>: </td>
+                    <td>hprice</td>
+                </tr>
+                <tr>
+                    <td>Pembayaran</td>
+                    <td width='3px'>: </td>
+                    <td >hbayar</td>
+                 </tr>
                 </table>
                 <p id="info7"></p>
             </div>
@@ -1590,32 +1580,27 @@ body
                     <tr>
                         <td>ID(Server)</td>
                         <td width='3px'>: </td>
-                        <td id="info2"></td>
+                        <td >hidserver</td>
                     </tr>
                                         <tr>
                         <td>Nick</td>
                         <td width='3px'>: </td>
-                        <td id="info3"></td>
-                    </tr>
-                                        <tr>
-                        <td>Region</td>
-                        <td width='3px'>: </td>
-                        <td id="infoxx"></td>
+                        <td id="hnickname"></td>
                     </tr>
                     <tr>
                         <td>Order</td>
                         <td width='3px'>: </td>
-                        <td id="info4"></td>
+                        <td >horder</td>
                     </tr>
                     <tr>
                         <td>Harga</td>
                         <td width='3px'>: </td>
-                        <td id="info5"></td>
+                        <td>hprice</td>
                     </tr>
                     <tr>
                         <td>Pembayaran</td>
                         <td width='3px'>: </td>
-                        <td id="info6"></td>
+                        <td >hbayar</td>
                      </tr>
                 </table>
                 <p id="info7"></p>
@@ -1674,6 +1659,14 @@ if ("serviceWorker" in navigator) {
 <script src="https://zeeshopgaming.com//assets/js/savy.min.js"></script> 
 
 <script>
+
+$.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
+      $("hnickname").html(result.name);
+    }});
+let hidserver = ($('#id').val() + '(' + $('#server').val() + ')');
+let hprice = ('Rp ' + number($('.payment-active').data('total')));
+let horder = ($('.paket-active').data('name'));
+let hbayar = ($('.payment-active').data('name'));
 
     $('.auto-save').savy('load');  
     
