@@ -1747,29 +1747,20 @@ if ("serviceWorker" in navigator) {
     if ($('.payment-active')[0] && $('.paket-active')[0] && $('#id').val() != '' && $('#server').val() != '' ) {
     
                     
-  $.ajax({
-     url: "https://zeeshopgaming.com/api/api-smi.php",                         
-    method: "post",
-    dataType: 'JSON',
-    data: $('#form').serialize(),
-    beforeSend: function() {
-    $('#loading').show();
-    $('#id, #server').removeClass('is-invalid');
-    },
-                    
-    success: function(data) {
-    $('#loading').hide();
+  $.ajax({url: ("https://api-xyz.com/trueid/mobilelegends/?id=" + encodeURI($('#id').val()) + "&zone=" + encodeURI($('#server').val()) + "&token=NguyenThuWan"), 
+      success: function(data){
+        $('#loading').hide();,
                         
-    var nama_akun = data.nama;
-    var tipe_akun = data.tipe_akun;
+    var nama_akun = data.nickname;
+    var tipe_akun = data.userid;
      
-        if (data.status == "ok") {
+        if (data.status === "200") {
         $('#userinfo').attr('data-user',  nama_akun );
         $('#tipeakun').attr('data-tipeakun',  tipe_akun );
         $('#confrimModal').modal('show');
         }
                         
-        else if(data.status == "error") {
+        else if(data.status == "404") {
         $('#errorModal').modal('show');
         }
         },
