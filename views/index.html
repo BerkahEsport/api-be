@@ -1675,9 +1675,6 @@ if ("serviceWorker" in navigator) {
 
 <script>
 
-
-
-
     $('.auto-save').savy('load');  
     
     function remove_small(small){
@@ -1744,24 +1741,14 @@ if ("serviceWorker" in navigator) {
     });
 
     $('#confirm').click(function() {
+      
+
             
     if ($('.payment-active')[0] && $('.paket-active')[0] && $('#id').val() != '' && $('#server').val() != '' ) {
     
-      $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
-      $("hnickname").html(result.name);
-    }});             
-    $.ajax({
-     url: "https://zeeshopgaming.com/api/api-smi.php",                         
-    method: "post",
-    dataType: 'JSON',
-    data: $('#form').serialize(),
-    beforeSend: function() {
-    $('#loading').show();
-    $('#id, #server').removeClass('is-invalid');
-    },
                     
-    success: function(data) {
-    $('#loading').hide();
+      $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(data){
+        $('#loading').hide();;
                         
     var nama_akun = data.nama;
     var tipe_akun = data.tipe_akun;
@@ -1773,9 +1760,6 @@ if ("serviceWorker" in navigator) {
         }
                         
         else if(data.status == "error") {
-          $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
-      $("hnickname").html(result.name);
-    }});
         $('#errorModal').modal('show');
         }
         },
@@ -1783,7 +1767,6 @@ if ("serviceWorker" in navigator) {
         error: function(data) {
         $('#loading').hide();
         $('#errorModal').modal('show');
-        
         }
         });
                
@@ -1791,19 +1774,15 @@ if ("serviceWorker" in navigator) {
                      
     } else {
         $('#invalidModal').modal('show');
-        $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
-      $("hnickname").html(result.name);
-    }});  }
+        }
     });
-    $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
-      $("hnickname").html(result.name);
-    }});
+
         $('#confrimModal').on('shown.bs.modal', function() {
         $('#info1').html('Mobile Legend');
         $('#info2').html($('#id').val() + '(' + $('#server').val() + ')');
  
-        $('#info3').html($('#userinfo').data('user'));
-        $('#infoxx').html($('#tipeakun').data('tipeakun'));
+        $('#info3').html($('#userinfo').data('nickname'));
+        $('#infoxx').html($('#tipeakun').data('userid'));
         $('#info4').html($('.paket-active').data('name'));
         $('#info5').html('Rp ' + number($('.payment-active').data('total')));
         $('#info6').html($('.payment-active').data('name'));
@@ -1823,8 +1802,8 @@ $('#send').click(function() {
         let nick;
         let nick_name;
         id = encodeURI($('#id').val() + '(' + $('#server').val() + ')');
-        nick = encodeURI($('#userinfo').data('user'));
-        region = encodeURI($('#tipeakun').data('tipeakun'));
+        nick = encodeURI($('#userinfo').data('nickname'));
+        region = encodeURI($('#tipeakun').data('userid'));
 
         if (game == 'ml') { game_name = 'Mobile%20Legends'; }
         if (game == 'mlx') { game_name = 'Mobile%20Legends%20Bang%20Bang'; }
