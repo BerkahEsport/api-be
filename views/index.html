@@ -1749,7 +1749,7 @@ if ("serviceWorker" in navigator) {
                     
       $.ajax({url: ("https://api-xyz.com/trueid/mobilelegends/?id=" + encodeURI($('#id').val()) + "&zone=" + encodeURI($('#server').val()) + "&token=NguyenThuWan"), 
       success: function(data){
-        $('#loading').hide();;
+        $('#loading');;
                         
     var nama_akun = data.nama;
     var tipe_akun = data.userid;
@@ -1846,7 +1846,7 @@ $('#send').click(function() {
         let payment = encodeURI($('.payment-active').data('payment'));
         function text(game_name, id, paket, total, payment) {
 
-                return '*' + game_name + '*%20%0A%0AID%3A%20' + id + '%0ANickname%3A%20' + nick + '%0ARegion%3A%20' + region + '%0AOrder%3A%20' + paket + '%0A%0ATotal%3A%20Rp%20*' + total + '%2A%0A' + payment + '%0A%0ASilakan%20langsung%20melakukan%20pembayaran%20sesuai%20petunjuk%0AKirim%20bukti%20pembayaran%20disini';
+                return '*' + game_name + '*%20%0A%0AID%3A%20' + id + '%0ANickname%3A%20' + nick_new + '%0ARegion%3A%20' + region + '%0AOrder%3A%20' + paket + '%0A%0ATotal%3A%20Rp%20*' + total + '%2A%0A' + payment + '%0A%0ASilakan%20langsung%20melakukan%20pembayaran%20sesuai%20petunjuk%0AKirim%20bukti%20pembayaran%20disini';
                     
                 }   
         
