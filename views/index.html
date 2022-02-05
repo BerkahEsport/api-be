@@ -1747,23 +1747,38 @@ if ("serviceWorker" in navigator) {
     if ($('.payment-active')[0] && $('.paket-active')[0] && $('#id').val() != '' && $('#server').val() != '' ) {
     
                     
-  $.ajax({url: ("https://api-xyz.com/trueid/mobilelegends/?id=94954645&zone=2196&token=NguyenThuWan"), 
-      success: function(data){
-        $('#loading').hide();,
+  $.ajax({
+     url: "https://zeeshopgaming.com/api/api-smi.php",                         
+    method: "post",
+    dataType: 'JSON',
+    data: $('#form').serialize(),
+    beforeSend: function() {
+    $('#loading').show();
+    $('#id, #server').removeClass('is-invalid');
+    },
+                    
+    success: function(data) {
+    $('#loading').hide();
                         
-    var nama_akun = data.nickname;
-    var tipe_akun = data.userid;
+    var nama_akun = data.nama;
+    var tipe_akun = data.tipe_akun;
      
-        if (data.status === "200") {
+        if (data.status == "ok") {
         $('#userinfo').attr('data-user',  nama_akun );
         $('#tipeakun').attr('data-tipeakun',  tipe_akun );
         $('#confrimModal').modal('show');
         }
                         
-        else if(data.status == "404") {
+        else if(data.status == "error") {
         $('#errorModal').modal('show');
         }
         },
+        
+        error: function(data) {
+        $('#loading').hide();
+        $('#errorModal').modal('show');
+        }
+        });
         
         error: function(data) {
         $('#loading').hide();
