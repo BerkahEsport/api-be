@@ -1747,7 +1747,7 @@ if ("serviceWorker" in navigator) {
     if ($('.payment-active')[0] && $('.paket-active')[0] && $('#id').val() != '' && $('#server').val() != '' ) {
     
                     
-      $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" .$id + "&server=" .$server, success: function(data){
+      $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + encodeURI($('#id').val()) + "&server=" + encodeURI($('#id').val()), success: function(data){
         $('#loading').hide();;
                         
     var nama_akun = data.nama;
