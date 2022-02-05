@@ -1369,7 +1369,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="167" data-name="OVO" data-payment="Isi/kirim saldo ke OVO - 62895371549895 - *SUPINI*" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="167" data-name="OVO" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" style="" height="18px" src="https://zeeshopgaming.com/img/payment/e-ovo.png">
@@ -1382,7 +1382,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="157" data-name="DANA" data-payment="Isi/kirim saldo ke DANA - 62895371549895 - *ISNIAH*" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="157" data-name="DANA" data-payment="Isi/kirim saldo ke DANA - 62895371549895 - *Tri Prabowo Mukti*" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" style="" height="18px" src="https://zeeshopgaming.com/img/payment/e-dana.png">
@@ -1395,7 +1395,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="166" data-name="GOPAY" data-payment="Pembayaran lewat scan QR Code" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="166" data-name="GOPAY" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" style="" height="18px" src="https://zeeshopgaming.com/img/payment/e-gopay.png">
@@ -1408,7 +1408,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="178" data-name="KODE QR" data-payment="Pembayaran lewat scan QR Code" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="178" data-name="KODE QR" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" style="" height="18px" src="https://zeeshopgaming.com/img/payment/e-qris.png">
@@ -1421,7 +1421,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="158" data-name="SHOPEE PAY" data-payment="Pembayaran lewat scan QR Shopee Pay" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="158" data-name="SHOPEE PAY" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" style="" height="18px" src="https://zeeshopgaming.com/img/payment/e-shopee.png">
@@ -1434,7 +1434,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="13" data-name="LINK AJA" data-payment="Isi/kirim saldo ke LINK AJA - 62895375950107 - *ISTIANA*" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="13" data-name="LINK AJA" data-payment="Isi/kirim saldo ke LINK AJA - 62895371549895 - *Eri Prabowo Mukti*" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" style="" height="18px" src="https://zeeshopgaming.com/img/payment/e-linkaja.png">
@@ -1751,15 +1751,15 @@ if ("serviceWorker" in navigator) {
         $('#loading').hide();;
                         
     var nama_akun = data.nama;
-    var tipe_akun = data.tipe_akun;
+    var tipe_akun = data.userid;
      
-        if (data.status == "ok") {
+        if (data.result.status == "200") {
         $('#userinfo').attr('data-user',  nama_akun );
         $('#tipeakun').attr('data-tipeakun',  tipe_akun );
         $('#confrimModal').modal('show');
         }
                         
-        else if(data.status == "error") {
+        else if(data.result.status == "404") {
         $('#errorModal').modal('show');
         }
         },
@@ -1802,8 +1802,8 @@ $('#send').click(function() {
         let nick;
         let nick_name;
         id = encodeURI($('#id').val() + '(' + $('#server').val() + ')');
-        nick = encodeURI($('#userinfo').data('nickname'));
-        region = encodeURI($('#tipeakun').data('userid'));
+        nick = nama_akun
+        region = tipe_akun;
 
         if (game == 'ml') { game_name = 'Mobile%20Legends'; }
         if (game == 'mlx') { game_name = 'Mobile%20Legends%20Bang%20Bang'; }
