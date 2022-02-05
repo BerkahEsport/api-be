@@ -1482,31 +1482,36 @@ body
             </div>
             <div class="modal-body">
                 <table class="table table-borderless">
-                  <tr>
-                    <td>ID(Server)</td>
-                    <td width='3px'>: </td>
-                    <td >hidserver</td>
-                </tr>
-                                    <tr>
-                    <td>Nick</td>
-                    <td width='3px'>: </td>
-                    <td id="hnickname"></td>
-                </tr>
-                <tr>
-                    <td>Order</td>
-                    <td width='3px'>: </td>
-                    <td >horder</td>
-                </tr>
-                <tr>
-                    <td>Harga</td>
-                    <td width='3px'>: </td>
-                    <td>hprice</td>
-                </tr>
-                <tr>
-                    <td>Pembayaran</td>
-                    <td width='3px'>: </td>
-                    <td >hbayar</td>
-                 </tr>
+                    <tr>
+                        <td>ID(Server)</td>
+                        <td width='3px'>: </td>
+                        <td id="info2"></td>
+                    </tr>
+                                        <tr>
+                        <td>Nick</td>
+                        <td width='3px'>: </td>
+                        <td id="hnickname"></td>
+                    </tr>
+                                        <tr>
+                        <td>Region</td>
+                        <td width='3px'>: </td>
+                        <td id="infoxx"></td>
+                    </tr>
+                    <tr>
+                        <td>Order</td>
+                        <td width='3px'>: </td>
+                        <td id="info4"></td>
+                    </tr>
+                    <tr>
+                        <td>Harga</td>
+                        <td width='3px'>: </td>
+                        <td id="info5"></td>
+                    </tr>
+                    <tr>
+                        <td>Pembayaran</td>
+                        <td width='3px'>: </td>
+                        <td id="info6"></td>
+                     </tr>
                 </table>
                 <p id="info7"></p>
             </div>
@@ -1529,31 +1534,36 @@ body
             </div>
             <div class="modal-body">
                 <table class="table table-borderless">
-                  <tr>
-                    <td>ID(Server)</td>
-                    <td width='3px'>: </td>
-                    <td >hidserver</td>
-                </tr>
-                                    <tr>
-                    <td>Nick</td>
-                    <td width='3px'>: </td>
-                    <td id="hnickname"></td>
-                </tr>
-                <tr>
-                    <td>Order</td>
-                    <td width='3px'>: </td>
-                    <td >horder</td>
-                </tr>
-                <tr>
-                    <td>Harga</td>
-                    <td width='3px'>: </td>
-                    <td>hprice</td>
-                </tr>
-                <tr>
-                    <td>Pembayaran</td>
-                    <td width='3px'>: </td>
-                    <td >hbayar</td>
-                 </tr>
+                    <tr>
+                        <td>ID(Server)</td>
+                        <td width='3px'>: </td>
+                        <td id="info2"></td>
+                    </tr>
+                                        <tr>
+                        <td>Nick</td>
+                        <td width='3px'>: </td>
+                        <td id="hnickname"></td>
+                    </tr>
+                                        <tr>
+                        <td>Region</td>
+                        <td width='3px'>: </td>
+                        <td id="infoxx"></td>
+                    </tr>
+                    <tr>
+                        <td>Order</td>
+                        <td width='3px'>: </td>
+                        <td id="info4"></td>
+                    </tr>
+                    <tr>
+                        <td>Harga</td>
+                        <td width='3px'>: </td>
+                        <td id="info5"></td>
+                    </tr>
+                    <tr>
+                        <td>Pembayaran</td>
+                        <td width='3px'>: </td>
+                        <td id="info6"></td>
+                     </tr>
                 </table>
                 <p id="info7"></p>
             </div>
@@ -1580,27 +1590,32 @@ body
                     <tr>
                         <td>ID(Server)</td>
                         <td width='3px'>: </td>
-                        <td >hidserver</td>
+                        <td id="info2"></td>
                     </tr>
                                         <tr>
                         <td>Nick</td>
                         <td width='3px'>: </td>
                         <td id="hnickname"></td>
                     </tr>
+                                        <tr>
+                        <td>Region</td>
+                        <td width='3px'>: </td>
+                        <td id="infoxx"></td>
+                    </tr>
                     <tr>
                         <td>Order</td>
                         <td width='3px'>: </td>
-                        <td >horder</td>
+                        <td id="info4"></td>
                     </tr>
                     <tr>
                         <td>Harga</td>
                         <td width='3px'>: </td>
-                        <td>hprice</td>
+                        <td id="info5"></td>
                     </tr>
                     <tr>
                         <td>Pembayaran</td>
                         <td width='3px'>: </td>
-                        <td >hbayar</td>
+                        <td id="info6"></td>
                      </tr>
                 </table>
                 <p id="info7"></p>
@@ -1660,13 +1675,8 @@ if ("serviceWorker" in navigator) {
 
 <script>
 
-$.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
-      $("hnickname").html(result.name);
-    }});
-let hidserver = ($('#id').val() + '(' + $('#server').val() + ')');
-let hprice = ('Rp ' + number($('.payment-active').data('total')));
-let horder = ($('.paket-active').data('name'));
-let hbayar = ($('.payment-active').data('name'));
+
+
 
     $('.auto-save').savy('load');  
     
@@ -1737,7 +1747,9 @@ let hbayar = ($('.payment-active').data('name'));
             
     if ($('.payment-active')[0] && $('.paket-active')[0] && $('#id').val() != '' && $('#server').val() != '' ) {
     
-                    
+      $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
+      $("hnickname").html(result.name);
+    }});             
     $.ajax({
      url: "https://zeeshopgaming.com/api/api-smi.php",                         
     method: "post",
@@ -1761,6 +1773,9 @@ let hbayar = ($('.payment-active').data('name'));
         }
                         
         else if(data.status == "error") {
+          $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
+      $("hnickname").html(result.name);
+    }});
         $('#errorModal').modal('show');
         }
         },
@@ -1768,6 +1783,7 @@ let hbayar = ($('.payment-active').data('name'));
         error: function(data) {
         $('#loading').hide();
         $('#errorModal').modal('show');
+        
         }
         });
                
@@ -1775,9 +1791,13 @@ let hbayar = ($('.payment-active').data('name'));
                      
     } else {
         $('#invalidModal').modal('show');
-        }
+        $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
+      $("hnickname").html(result.name);
+    }});  }
     });
-
+    $.ajax({url: "https://api-xyz.com/trueid/mobilelegends?token=NguyenThuWan&id=" + $("#id") + "&server=" + $("#server"), success: function(result){
+      $("hnickname").html(result.name);
+    }});
         $('#confrimModal').on('shown.bs.modal', function() {
         $('#info1').html('Mobile Legend');
         $('#info2').html($('#id').val() + '(' + $('#server').val() + ')');
