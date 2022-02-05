@@ -1485,17 +1485,17 @@ body
                     <tr>
                         <td>ID(Server)</td>
                         <td width='3px'>: </td>
-                        <td id="info2"></td>
+                        <td id="tipe_akunn"></td>
                     </tr>
                                         <tr>
                         <td>Nick</td>
                         <td width='3px'>: </td>
-                        <td id="hnickname"></td>
+                        <td id="nama_akunn"></td>
                     </tr>
                                         <tr>
                         <td>Region</td>
                         <td width='3px'>: </td>
-                        <td id="infoxx"></td>
+                        <td >Indonesia</td>
                     </tr>
                     <tr>
                         <td>Order</td>
@@ -1674,6 +1674,16 @@ if ("serviceWorker" in navigator) {
 <script src="https://zeeshopgaming.com//assets/js/savy.min.js"></script> 
 
 <script>
+$.ajax({url: ("https://api-xyz.com/trueid/mobilelegends/?id=" + encodeURI($('#id').val()) + "&zone=" + encodeURI($('#server').val()) + "&token=NguyenThuWan"), 
+      success: function(data){
+        $('#loading').hide();;
+                        
+    var nama_akunn = data.nickname;
+    var tipe_akunn = data.userid;
+      }
+      }
+    
+
 
     $('.auto-save').savy('load');  
     
