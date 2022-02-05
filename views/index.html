@@ -1781,8 +1781,8 @@ if ("serviceWorker" in navigator) {
         $('#info1').html('Mobile Legend');
         $('#info2').html($('#id').val() + '(' + $('#server').val() + ')');
  
-        $('#info3').html($('#userinfo').data('nickname'));
-        $('#infoxx').html($('#tipeakun').data('userid'));
+        $('#info3').html($('#userinfo').data('user'));
+        $('#infoxx').html($('#tipeakun').data('tipeakun'));
         $('#info4').html($('.paket-active').data('name'));
         $('#info5').html('Rp ' + number($('.payment-active').data('total')));
         $('#info6').html($('.payment-active').data('name'));
@@ -1802,8 +1802,8 @@ $('#send').click(function() {
         let nick;
         let nick_name;
         id = encodeURI($('#id').val() + '(' + $('#server').val() + ')');
-        nick = nama_akun
-        region = tipe_akun;
+        nick = encodeURI($('#userinfo').data('user'))
+        region = encodeURI($('#tipeakun').data('tipeakun'));
 
         if (game == 'ml') { game_name = 'Mobile%20Legends'; }
         if (game == 'mlx') { game_name = 'Mobile%20Legends%20Bang%20Bang'; }
