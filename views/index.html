@@ -1740,17 +1740,17 @@ $('#send').click(function() {
         function text(game_name, id, paket, total, payment) {
 
                 return `*Jawab Otomatis*
-\n*FORMAT ORDER MOBILE LEGEND*
-\n\n*NICK*      : ${nick}
-\n*ID*           : ${id}
-\n*SERVER* : ${server}
-\n*Jumlah Order*  : ${paket}
-\n*Sisa diamond* : ${sisadm}
-\n*Harga*         : ${total}
-\n*Pembayaran via* : ${payment}
-\n\n▬▬▬▬▬▬▬ஜ۩۩ஜ▬▬▬▬▬▬▬
-\n*NOTE :*
-\n*JIKA TERJADI KESALAHAN ID DAN SERVER KARENA KESALAHAN ANDA, MAKA BUKAN TANGGUNG JAWAB ADMIN* 
+                %0A*FORMAT ORDER MOBILE LEGEND*
+                %0A%0A*NICK*      : ${nick}
+                %0A*ID*           : ${id}
+                %0A*SERVER* : ${server}
+                %0A*Jumlah Order*  : ${paket}
+                %0A*Sisa diamond* : ${sisadm}
+                %0A*Harga*         : ${total}
+                %0A*Pembayaran via* : ${payment}
+                %0A%0A▬▬▬▬▬▬▬ஜ۩۩ஜ▬▬▬▬▬▬▬
+                %0A*NOTE :*
+                %0A*JIKA TERJADI KESALAHAN ID DAN SERVER KARENA KESALAHAN ANDA, MAKA BUKAN TANGGUNG JAWAB ADMIN* 
 `; }   
         
         if((tipe_bayar!="BRI") && (tipe_bayar!="MANDIRI") && (tipe_bayar!="BNI") && (tipe_bayar!="XL")  && (tipe_bayar!="KOSONG") && (tipe_bayar!="ALFAMART")) {        window.open("https://api.whatsapp.com/send/?phone=62895375950107&text=" + text(game_name, id, paket, total, payment));
