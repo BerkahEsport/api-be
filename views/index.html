@@ -36,10 +36,9 @@
 
 .animated {
 	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #FF0000;
-	-webkit-animation: animatedBackground_c 2s infinite alternate;
+
 }
 @keyframes animatedBackground_c {
 	0% {-webkit-text-stroke-color: #ff8b00}
@@ -1373,7 +1372,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="167" data-name="OVO" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="167" data-name="OVO" data-payment="OVO" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid"  height="18px" src="https://zeeshopgaming.com/img/payment/e-ovo.png">
@@ -1386,7 +1385,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="157" data-name="DANA" data-payment="Isi/kirim saldo ke DANA - 62895371549895 - *Tri Prabowo Mukti*" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="157" data-name="DANA" data-payment="DANA" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid"  height="18px" src="https://zeeshopgaming.com/img/payment/e-dana.png">
@@ -1399,7 +1398,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="166" data-name="GOPAY" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="166" data-name="GOPAY" data-payment="GOPAY" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-gopay.png">
@@ -1412,7 +1411,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="178" data-name="KODE QR" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="178" data-name="KODE QR" data-payment="QRis Code" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-qris.png">
@@ -1425,7 +1424,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="158" data-name="SHOPEE PAY" data-payment="Pembayaran lewat scan QR Code. Scan di PP whatsapp ini." class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="158" data-name="SHOPEE PAY" data-payment="SHOPEE PAY" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-shopee.png">
@@ -1438,7 +1437,7 @@ body
 
 
                         <div class="col-4 md-4 col-4 mb-4 p-0">
-                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="13" data-name="LINK AJA" data-payment="Isi/kirim saldo ke LINK AJA - 62895371549895 - *Eri Prabowo Mukti*" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                          <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="13" data-name="LINK AJA" data-payment="LINK AJA" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
                             <div class="row m-2 shadow-sm">
                               <div class="col-12">
                                 <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-linkaja.png">
@@ -1510,33 +1509,27 @@ body
             <div class="modal-body">
                 <table class="table table-borderless">
                     <tr>
-                        <td>ID(Server)</td>
-                        <td width='1px'>: </td>
+                        <td>ID(Server) : </td>
                         <td id="info2"></td>
                     </tr>
                                         <tr>
-                        <td>Nickname</td>
-                        <td width='1px'>: </td>
+                        <td>Nickname : </td>
                         <td id="info3"></td>
                     </tr>
                     <tr>
-                        <td>Order</td>
-                        <td width='1px'>: </td>
+                        <td>Order : </td>
                         <td id="info4"></td>
                     </tr>
                     <tr>
-                        <td>Sisa Diamond</td>
-                        <td width='1px'>: </td>
+                        <td>Sisa Diamond : </td>
                         <td id="infosisa"></td>
                     </tr>
                     <tr>
-                        <td>Harga</td>
-                        <td width='1px'>: </td>
+                        <td>Harga : </td>
                         <td id="info5"></td>
                     </tr>
                     <tr>
-                        <td>Pembayaran</td>
-                        <td width='1px'>: </td>
+                        <td>Pembayaran : </td>
                         <td id="info6"></td>
                      </tr>
                 </table>
@@ -1687,7 +1680,7 @@ if ("serviceWorker" in navigator) {
 
     if (($('.payment-active').data('name')) == 'KODE QR' || ($('.payment-active').data('name')) == 'SHOPEE PAY' || ($('.payment-active').data('name')) == 'OVO' || ($('.payment-active').data('name')) == 'DANA' || ($('.payment-active').data('name')) == 'GOPAY' || ($('.payment-active').data('name')) == 'LINKAJA') {
         
-                $('#info7').html('<center><img src="https://i.ibb.co/4KmpSKb/QRme.jpg" width="60%"/><br /><br />Silakan Scan KODE QR ini</center>');         
+                $('#info7').html('<center><img src="https://i.ibb.co/4KmpSKb/QRme.jpg" width="50%"/><br /><br />Silakan Scan KODE QR ini</center>');         
              
         return;
          }
