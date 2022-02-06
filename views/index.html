@@ -859,7 +859,7 @@ button1:hover {
 
 <!-- TOPUP Mobile Legends -->
   
-<body>
+<container>
 <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/animate.css" />
 <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/LineIcons.2.0.css" />
@@ -1498,6 +1498,7 @@ body
 </div>
 
     <!-- Modal -->
+<container>
 <div class="modal fade" id="confrimModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="confrimModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1549,7 +1550,7 @@ body
         </div>
     </div>
 </div>
-  
+</container>
 
 <!--CODE SCRIPT-->
 <script src="https://zeeshopgaming.com/assets/js/bootstrap.min.js"></script>
@@ -1739,33 +1740,17 @@ $('#send').click(function() {
         function text(game_name, id, paket, total, payment) {
 
                 return `*Jawab Otomatis*
-
-*FORMAT ORDER MOBILE LEGEND*
-
-
-
-*NICK*      : ${nick}
-
-*ID*           : ${id}
-
-*SERVER* : ${server}
-
-*Jumlah Order*  : ${paket}
-
-*Sisa diamond* : ${sisadm}
-
-*Harga*         : ${total}
-
-*Pembayaran via* : ${payment}
-
-
-
-
-                ▬▬▬▬▬▬▬ஜ۩۩ஜ▬▬▬▬▬▬▬
-
-*NOTE :*
-
-*JIKA TERJADI KESALAHAN ID DAN SERVER KARENA KESALAHAN ANDA, MAKA BUKAN TANGGUNG JAWAB ADMIN* 
+\n*FORMAT ORDER MOBILE LEGEND*
+\n\n*NICK*      : ${nick}
+\n*ID*           : ${id}
+\n*SERVER* : ${server}
+\n*Jumlah Order*  : ${paket}
+\n*Sisa diamond* : ${sisadm}
+\n*Harga*         : ${total}
+\n*Pembayaran via* : ${payment}
+\n\n▬▬▬▬▬▬▬ஜ۩۩ஜ▬▬▬▬▬▬▬
+\n*NOTE :*
+\n*JIKA TERJADI KESALAHAN ID DAN SERVER KARENA KESALAHAN ANDA, MAKA BUKAN TANGGUNG JAWAB ADMIN* 
 `; }   
         
         if((tipe_bayar!="BRI") && (tipe_bayar!="MANDIRI") && (tipe_bayar!="BNI") && (tipe_bayar!="XL")  && (tipe_bayar!="KOSONG") && (tipe_bayar!="ALFAMART")) {        window.open("https://api.whatsapp.com/send/?phone=62895375950107&text=" + text(game_name, id, paket, total, payment));
@@ -1781,7 +1766,7 @@ $('#send').click(function() {
         });
         
 </script>
-</body>          
+</container>          
             
             
             
