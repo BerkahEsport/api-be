@@ -1495,7 +1495,60 @@ body
   </div>
 </div>
 
-  
+    <!-- Modal -->
+<container>
+<div class="modal fade" id="confrimModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="confrimModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confrimModalLabel">Silahkan Cek Data Pesanan</h5>
+                <!--<i class="lni lni-close"  data-bs-dismiss="modal" aria-label="Close"></i>-->
+                <i class="lni lni-close" onClick="window.location.reload();" aria-label="Close"></i>
+            </div>
+            <div class="modal-body">
+                <table class="table table-borderless">
+                    <tr>
+                        <td>ID(Server)</td>
+                        <td width='1px'>: </td>
+                        <td id="info2"></td>
+                    </tr>
+                                        <tr>
+                        <td>Nickname</td>
+                        <td width='1px'>: </td>
+                        <td id="info3"></td>
+                    </tr>
+                    <tr>
+                        <td>Order</td>
+                        <td width='1px'>: </td>
+                        <td id="info4"></td>
+                    </tr>
+                    <tr>
+                        <td>Sisa Diamond</td>
+                        <td width='1px'>: </td>
+                        <td id="infosisa"></td>
+                    </tr>
+                    <tr>
+                        <td>Harga</td>
+                        <td width='1px'>: </td>
+                        <td id="info5"></td>
+                    </tr>
+                    <tr>
+                        <td>Pembayaran</td>
+                        <td width='1px'>: </td>
+                        <td id="info6"></td>
+                     </tr>
+                </table>
+        
+            </div>
+             <div class="modal-footer">
+                <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>-->
+                <a onClick="window.location.reload();">Batal </a>
+                <button type="button" class="btn btn-purple" id="send">Lanjutkan</button>
+            </div>
+        </div>
+    </div>
+</div>
+</container>
 
 <!--CODE SCRIPT-->
 <script src="https://zeeshopgaming.com/assets/js/bootstrap.min.js"></script>
@@ -1714,60 +1767,6 @@ $('#send').click(function() {
 </container>                         
             
 <!-- TOPUP Mobile Legends -->
-  <!-- Modal -->
-<container>
-<div class="modal fade" id="confrimModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="confrimModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="confrimModalLabel">Silahkan Cek Data Pesanan</h5>
-                <!--<i class="lni lni-close"  data-bs-dismiss="modal" aria-label="Close"></i>-->
-                <i class="lni lni-close" onClick="window.location.reload();" aria-label="Close"></i>
-            </div>
-            <div class="modal-body">
-                <table class="table table-borderless">
-                    <tr>
-                        <td>ID(Server)</td>
-                        <td width='1px'>: </td>
-                        <td id="info2"></td>
-                    </tr>
-                                        <tr>
-                        <td>Nickname</td>
-                        <td width='1px'>: </td>
-                        <td id="info3"></td>
-                    </tr>
-                    <tr>
-                        <td>Order</td>
-                        <td width='1px'>: </td>
-                        <td id="info4"></td>
-                    </tr>
-                    <tr>
-                        <td>Sisa Diamond</td>
-                        <td width='1px'>: </td>
-                        <td id="infosisa"></td>
-                    </tr>
-                    <tr>
-                        <td>Harga</td>
-                        <td width='1px'>: </td>
-                        <td id="info5"></td>
-                    </tr>
-                    <tr>
-                        <td>Pembayaran</td>
-                        <td width='1px'>: </td>
-                        <td id="info6"></td>
-                     </tr>
-                </table>
-        
-            </div>
-             <div class="modal-footer">
-                <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>-->
-                <a onClick="window.location.reload();">Batal </a>
-                <button type="button" class="btn btn-purple" id="send">Lanjutkan</button>
-            </div>
-        </div>
-    </div>
-</div>
-</container>
 
 <div class="col-xl-3 col-md-6 mb-4">
 <div class="card h-100">
