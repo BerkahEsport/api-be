@@ -1509,31 +1509,37 @@ body
             <div class="modal-body">
                 <table class="table table-borderless">
                     <tr>
-                        <td>ID(Server) : </td>
-                        <td id="info2"></td>
+                        <td>ID(Server) : <span id="info2"></span></td>
+                        
+                        
                     </tr>
                                         <tr>
-                        <td>Nickname : </td>
-                        <td id="info3"></td>
+                        <td>Nickname : <span id="info3"></span></td>
+                       
+                        
                     </tr>
                     <tr>
-                        <td>Order : </td>
-                        <td id="info4"></td>
+                        <td>Order : <span id="info4"></span></td>
+                        
+                        
                     </tr>
                     <tr>
-                        <td>Sisa Diamond : </td>
-                        <td id="infosisa"></td>
+                        <td>Sisa Diamond :  <span id="infosisa"></span></td>
+                        
+                       
                     </tr>
                     <tr>
-                        <td>Harga : </td>
-                        <td id="info5"></td>
+                        <td>Harga : <span id="info5"></span></td>
+              
+                        
                     </tr>
                     <tr>
-                        <td>Pembayaran : </td>
-                        <td id="info6"></td>
+                        <td>Pembayaran : <span id="info6"></span></td>
+                        
+                        
                      </tr>
                 </table>
-                <p id="info7"></p>
+                <h5 id="info7"></h5>
             </div>
              <div class="modal-footer">
                 <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>-->
@@ -1680,7 +1686,7 @@ if ("serviceWorker" in navigator) {
 
     if (($('.payment-active').data('name')) == 'KODE QR' || ($('.payment-active').data('name')) == 'SHOPEE PAY' || ($('.payment-active').data('name')) == 'OVO' || ($('.payment-active').data('name')) == 'DANA' || ($('.payment-active').data('name')) == 'GOPAY' || ($('.payment-active').data('name')) == 'LINKAJA') {
         
-                $('#info7').html('<center><img src="https://i.ibb.co/4KmpSKb/QRme.jpg" width="50%"/><br /><br />Silakan Scan KODE QR ini</center>');         
+                $('#info7').html('<center><img src="https://i.ibb.co/4KmpSKb/QRme.jpg" width="60%"/><br /><br />Silakan Scan KODE QR ini</center>');         
              
         return;
          }
