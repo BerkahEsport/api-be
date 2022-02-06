@@ -218,644 +218,6 @@ button1:hover {
 
 </style>
 
-<body id="page-top" onload="getvisitor();">
-  <div id="wrapper">
-    <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <div class="sidebar-brand-icon">
-        	<img src="https://i.ibb.co/VQQ68JS/berkahesport.jpg">
-        </div>
-        <div class="sidebar-brand-text mx-3">API - BERKAHESPORT</div>
-      </a>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fire"></i>
-          <span>All Api's</span></a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-        API Features
-      </div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="fas fa-download"></i>
-          <span>Social Media</span>
-        </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Media Features</h6>
-            <a class="collapse-item" href="api/yutub/video?url=https://youtu.be/VCgpxHZAkd8&apikey=berkahesport">YouTube Video</a>
-            <a class="collapse-item" href="api/yutub/audio?url=https://youtu.be/VCgpxHZAkd8&apikey=berkahesport">YouTube Audio</a>
-            <a class="collapse-item" href="api/yutub/search?video=BerkahEsport&apikey=berkahesport">YouTube Search</a>
-            <a class="collapse-item" href="api/fbdown/?url=https://web.facebook.com/berkahesport.id/photos/a.298894315572014/298894285572017&apikey=berkahesport">Facebook</a>
-            <a class="collapse-item" href="api/tiktod/?url=MASUKIN_URL&apikey=berkahesport">Tiktok</a>
-            <h6 class="collapse-header">Stalker Features</h6>
-            <a class="collapse-item" href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=berkahesport">Tiktok Stalk</a>
-            <a class="collapse-item" href="api/ig/stalk?username=moexti&apikey=berkahesport">Instagram Stalk</a>
-            <a class="collapse-item" href="api/github/stalk?username=BerkahEsport&apikey=berkahesport">Github Stalk</a>
-            <a class="collapse-item" href="api/repository/stalk?username=moexti&apikey=berkahesport">Repository Stalk</a>
-            </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true"
-          aria-controls="collapseIslamic">
-          <i class="fas fa-star-and-crescent"></i>
-          <span>Islamic</span>
-        </a>
-        <div id="collapseIslamic" class="collapse" aria-labelledby="headingIslamic" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Islamic Features</h6>
-            <a class="collapse-item" href="api/hadits?kitab=bukhari&nomor=52&apikey=berkahesport">Hadits Shahih</a>
-            <a class="collapse-item" href="api/quran?surah=1&ayat=2&apikey=berkahesport">Al Qur'an</a>
-            <a class="collapse-item" href="api/muslim/tahlil?apikey=berkahesport">Doa Tahlil</a>
-            <a class="collapse-item" href="api/muslim/wirid?apikey=berkahesport">Doa Wirid</a>
-            <a class="collapse-item" href="api/muslim/asmaulhusna?apikey=berkahesport">Asmaul Husna</a>
-            <a class="collapse-item" href="api/muslim/doaharian?apikey=berkahesport">Doa Harian</a>
-            <a class="collapse-item" href="api/muslim/ayatkursi?apikey=berkahesport">Ayat Kursi</a>
-            <a class="collapse-item" href="api/kisahnabi?nabi=muhammad&apikey=berkahesport">Kisah Nabi</a>
-            <a class="collapse-item" href="api/muslim/niatshalat?apikey=berkahesport">Niat Shalat</a>
-            <a class="collapse-item" href="api/muslim/bacaanshalat?apikey=berkahesport">Bacaan Shalat</a>
-           <!-- <a class="collapse-item" href="api/jadwalshalat?kota=jakartautara&apikey=berkahesport">Jadwal Shalat</a> -->
-          </div>
-        </div>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKodepos" aria-expanded="true"
-          aria-controls="collapseKodepos">
-          <i class="fas fa-images"></i>
-          <span>Images</span>
-        </a>
-        <div id="collapseKodepos" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Images Features</h6>
-            <a class="collapse-item" href="api/wallpaper/teknologi?apikey=berkahesport">Wallpaper Teknologi</a>
-            <a class="collapse-item" href="api/wallpaper/programming?apikey=berkahesport">Wallpaper Programming</a>
-            <a class="collapse-item" href="api/wallpaper/cyberspace?apikey=berkahesport">Wallpaper CyberSpace</a>
-            <a class="collapse-item" href="api/wallpaper/muslim?apikey=berkahesport">Wallpaper Muslim</a>
-            <a class="collapse-item" href="api/wallpaper/pegunungan?apikey=berkahesport">Wallpaper Mountain View</a>
-            </div>
-            </div>
-            </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGithub"
-          aria-expanded="true" aria-controls="collapseGithub">
-          <i class="fas fa-random"></i>
-          <span>Random</span>
-        </a>
-        <div id="collapseGithub" class="collapse" aria-labelledby="headingGithub" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Random Features</h6>
-            <a class="collapse-item" href="api/randomquote?apikey=berkahesport">Quotes</a>
-            <a class="collapse-item" href="api/randomquote/muslim?apikey=berkahesport">Quotes Islami</a>
-            <a class="collapse-item" href="api/quotes/kanye?apikey=berkahesport">Quotes Kanye</a>
-            <a class="collapse-item" href="api/random/asmaulhusna?apikey=berkahesport">Asmaul Husna</a>
-            <a class="collapse-item" href="api/random/meme?apikey=berkahesport">Meme</a>
-            <a class="collapse-item" href="api/random/wallpaper?apikey=berkahesport">Wallpaper</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker"
-          aria-expanded="true" aria-controls="collapseMaker">
-          <i class="fas fa-images"></i>
-          <span>Text Maker 2D</span>
-        </a>
-        <div id="collapseMaker" class="collapse" aria-labelledby="headingMaker" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">TextMaker2D Features</h6>
-            <a class="collapse-item" href="api/maker?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 1</a>
-            <a class="collapse-item" href="api/maker2?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 2</a>
-            <a class="collapse-item" href="api/maker3?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 3</a>
-            <a class="collapse-item" href="api/maker4?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 4</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker3D"
-          aria-expanded="true" aria-controls="collapseMaker3D">
-          <i class="fas fa-images"></i>
-          <span>Text Maker 3D</span>
-        </a>
-        <div id="collapseMaker3D" class="collapse" aria-labelledby="headingMaker3D" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">TextMaker3D Features</h6>
-            <a class="collapse-item" href="api/maker3d?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 1</a>
-            <a class="collapse-item" href="api/maker3d/no2?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 2</a>
-            <a class="collapse-item" href="api/maker3d/no3?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 3</a>
-            <a class="collapse-item" href="api/maker3d/no4?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 4</a>
-            <a class="collapse-item" href="api/maker3d/no5?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 5</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMakerOther"
-          aria-expanded="true" aria-controls="collapseMakerOther">
-          <i class="fas fa-images"></i>
-          <span>Text Maker Others</span>
-        </a>
-        <div id="collapseMakerOther" class="collapse" aria-labelledby="headingMakerOther" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">TextMaker Others Features</h6>
-            <a class="collapse-item" href="api/maker/special/transformer?text=Transformer&apikey=berkahesport">Transformer</a>
-            <a class="collapse-item" href="api/maker/special/epep?text=berkahesport&apikey=berkahesport">Sertifikat Epep</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseText" aria-expanded="true"
-          aria-controls="collapseText">
-          <i class="fas fa-images"></i>
-          <span>Photooxy</span>
-        </a>
-        <div id="collapseText" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Photooxy Features</h6>
-            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&theme=glitch&apikey=berkahesport">Glitch</a>
-            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&text3=gwganteng&theme=google-suggestion&apikey=berkahesport">Google Suggestion</a>
-            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=pubg&apikey=berkahesport">PUBG</a>
-            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=battlefield&apikey=berkahesport">BattleField</a>
-            <a class="collapse-item" href="api/textmaker/senja?text=berkahesport&theme=coffee-cup&apikey=berkahesport">Coffee Cup</a>
-            <a class="collapse-item" href="api/textmaker/senja?text=berkahesport&theme=coffee-cup2&apikey=berkahesport">Coffee Cup 2</a>
-            <a class="collapse-item" href="api/textmaker/metallic?text=berkahesport&theme=neon&apikey=berkahesport">Neon</a>
-            <a class="collapse-item" href="api/textmaker/metallic?text=berkahesport&theme=glow&apikey=berkahesport">Glow</a>
-            <a class="collapse-item" href="api/textmaker/alam?text=berkahesport&theme=summer&apikey=berkahesport">Summer</a>
-            <a class="collapse-item" href="api/textmaker/alam?text=berkahesport&theme=flower&apikey=berkahesport">Flower</a>
-            <a class="collapse-item" href="api/textmaker/random?text=berkahesport&theme=text-burn&apikey=berkahesport">Text Burn</a>
-            <a class="collapse-item" href="api/textmaker/random?text=berkahesport&theme=art-quote&apikey=berkahesport">Art Quote</a>
-            <a class="collapse-item" href="api/textmaker/roses?text=berkahesport&theme=wooden-boarch&apikey=berkahesport">Wooden Boarch</a>
-            <a class="collapse-item" href="api/textmaker/roses?text=berkahesport&theme=golden&apikey=berkahesport">Golden Roses</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
-          aria-controls="collapseAnime">
-          <i class="fas fa-tv"></i>
-          <span>Anime</span>
-        </a>
-        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Anime/Manga Features</h6>
-            <a class="collapse-item" href="api/anime/kusonime?search=planetarian&apikey=berkahesport">Kusonime</a>
-            <a class="collapse-item" href="api/manga?search=kimetsu no yaiba&apikey=berkahesport">Manga</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime3" aria-expanded="true"
-          aria-controls="collapseAnime3">
-          <i class="fas fa-mug-hot"></i>
-          <span>Asupan Timeline</span>
-        </a>
-        <div id="collapseAnime3" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Asupan Timeline Features</h6>
-            <a class="collapse-item" href="api/asupan/tiktok?apikey=berkahesport">Tiktok Random Video</a>
-            <a class="collapse-item" href="api/asupan?apikey=berkahesport">Asupan</a>
-		<a class="collapse-item" href="api/asupan/cecan?apikey=berkahesport">Asupan Cecan</a>
-
-            <a class="collapse-item" href="api/asupan/hijaber?apikey=berkahesport">Asupan Hijaber</a>
-            <a class="collapse-item" href="api/asupan/santuy?apikey=berkahesport">Asupan Santuy</a>
-            <a class="collapse-item" href="api/asupan/ukty?apikey=berkahesport">Asupan Ukhty</a>
-            <a class="collapse-item" href="api/asupan/bocil?apikey=berkahesport">Asupan Bocil</a>
-            <a class="collapse-item" href="api/asupan/ghea?apikey=berkahesport">Asupan Ghea</a>
-            <a class="collapse-item" href="api/asupan/rikagusriani?apikey=berkahesport">Asupan Rika</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime2" aria-expanded="true"
-          aria-controls="collapseAnime2">
-          <i class="fas fa-exclamation-triangle"></i>
-          <span>NSFW</span>
-        </a>
-        <div id="collapseAnime2" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">NSFW Features</h6>
-            <a class="collapse-item" href="api/nsfw/ass?apikey=berkahesport">Ass</a>
-            <a class="collapse-item" href="api/nsfw/ahegao?apikey=berkahesport">Ahegao</a>
-            <a class="collapse-item" href="api/nsfw/bdsm?apikey=berkahesport">Bdsm</a>
-            <a class="collapse-item" href="api/nsfw/blowjob?apikey=berkahesport">Blowjob</a>
-            <a class="collapse-item" href="api/nsfw/cuckold?apikey=berkahesport">Cuckold</a>
-            <a class="collapse-item" href="api/nsfw/cum?apikey=berkahesport">Cum</a>
-            <a class="collapse-item" href="api/nsfw/ero?apikey=berkahesport">Ero</a>
-            <a class="collapse-item" href="api/nsfw/femdom?apikey=berkahesport">Femdom</a>
-            <a class="collapse-item" href="api/nsfw/foot?apikey=berkahesport">Foot</a>
-            <a class="collapse-item" href="api/nsfw/gangbang?apikey=berkahesport">Gangbang</a>
-            <a class="collapse-item" href="api/nsfw/glasses?apikey=berkahesport">Glasses</a>
-            <a class="collapse-item" href="api/nsfw/hentai?apikey=berkahesport">Hentai</a>
-            <a class="collapse-item" href="api/nsfw/hentaigif?apikey=berkahesport">Hentai (GIF)</a>
-            <a class="collapse-item" href="api/nsfw/jahy?apikey=berkahesport">Jahy</a>
-            <a class="collapse-item" href="api/nsfw/masturbation?apikey=berkahesport">Masturbation</a>
-            <a class="collapse-item" href="api/nsfw/nsfwNeko?apikey=berkahesport">Neko</a>
-            <a class="collapse-item" href="api/nsfw/orgy?apikey=berkahesport">Orgy</a>
-            <a class="collapse-item" href="api/nsfw/panties?apikey=berkahesport">Panties</a>
-            <a class="collapse-item" href="api/nsfw/pussy?apikey=berkahesport">Pussy</a>
-            <a class="collapse-item" href="api/nsfw/thighs?apikey=berkahesport">Thighs</a>
-            <a class="collapse-item" href="api/nsfw/yuri?apikey=berkahesport">Yuri</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fas fa-gamepad"></i>
-                    <span>Games</span>
-                </a>
-                <div id="collapseGames" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Games Features</h6>
-            <a class="collapse-item" href="/api/kuis/caklontong?apikey=berkahesport">Cak Lontong</a>
-            <a class="collapse-item" href="/api/kuis/tebakgambar?apikey=berkahesport">Tebak Gambar</a>
-            <a class="collapse-item" href="/api/kuis/family100?apikey=berkahesport">Family 100</a>
-            </div>
-            </div>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGachaCewe" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fas fa-fire"></i>
-                    <span>Gacha Cewe</span>
-                </a>
-                <div id="collapseGachaCewe" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Cecan Features</h6>
-            <a class="collapse-item" href="/api/cewe/vietnam?apikey=berkahesport">Cecan Vietnam</a>
-            <a class="collapse-item" href="/api/cewe/malaysia?apikey=berkahesport">Cecan Malaysia</a>
-            <a class="collapse-item" href="/api/cewe/korea?apikey=berkahesport">Cecan Korea</a>
-            <a class="collapse-item" href="/api/cewe/indonesia?apikey=berkahesport">Cecan Indonesia</a>
-            <a class="collapse-item" href="/api/cewe/japan?apikey=berkahesport">Cecan Japan</a>
-            <a class="collapse-item" href="/api/cewe/thailand?apikey=berkahesport">Cecan Thailand</a>
-            <a class="collapse-item" href="/api/cewe/china?apikey=berkahesport">Cecan China</a>
-            </div>
-            </div>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFilmApik" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fas fa-film"></i>
-                    <span>FilmApik</span>
-                </a>
-                <div id="collapseFilmApik" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">FilmApik Features</h6>
-            <a class="collapse-item" href="/api/filmapik/search?film=avenger&apikey=berkahesport">Cari Film</a>
-            <a class="collapse-item" href="/api/filmapik/kategori?film=action&apikey=berkahesport">Cari Kategori Film</a>
-            <a class="collapse-item" href="/api/filmapik/terbaru?apikey=berkahesport">Film Terbaru</a>
-            <a class="collapse-item" href="/api/filmapik/play?id=142455&apikey=berkahesport">Play Film</a>
-            </div>
-            </div>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLk21" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fas fa-film"></i>
-                    <span>Lk21</span>
-                </a>
-                <div id="collapseLk21" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Lk21 Features</h6>
-            <a class="collapse-item" href="/api/lk21/search?film=avenger&apikey=berkahesport">Cari Film</a>
-            <a class="collapse-item" href="/api/lk21/terbaru?apikey=berkahesport">Film Terbaru</a>
-            <a class="collapse-item" href="/api/lk21/comingsoon?apikey=berkahesport">Film Yg Akan Datang</a>
-            <a class="collapse-item" href="/api/lk21/tvseries?apikey=berkahesport">Series TV</a>
-            <a class="collapse-item" href="/api/lk21/year?tahun=2021&apikey=berkahesport">Berdasarkan Tahun</a>
-            <a class="collapse-item" href="/api/lk21/country?negara=indonesia&apikey=berkahesport">Berdasarkan Negara</a>
-            <a class="collapse-item" href="/api/lk21/genre?tipe=action&apikey=berkahesport">Berdasarkan Genre</a>
-            </div>
-            </div>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNews" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fas fa-compass"></i>
-                    <span>News</span>
-                </a>
-                <div id="collapseNews" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">News Features</h6>
-            <a class="collapse-item" href="api/news">Jenis Berita</a>
-            <a class="collapse-item" href="api/news/cnn?type=JENIS_BERITA&apikey=berkahesport">Cnn News</a>
-            <a class="collapse-item" href="api/news/cnbc?type=JENIS_BERITA&apikey=berkahesport">CnBc News</a>
-            <a class="collapse-item" href="api/news/republika?type=JENIS_BERITA&apikey=berkahesport">Republika News</a>
-            <a class="collapse-item" href="api/news/tempo?type=JENIS_BERITA&apikey=berkahesport">Tempo News</a>
-            <a class="collapse-item" href="api/news/antara?type=JENIS_BERITA&apikey=berkahesport">Antara News</a>
-            <a class="collapse-item" href="api/news/kumparan?type=JENIS_BERITA&apikey=berkahesport">Kumparan News</a>
-            </div>
-            </div>
-        </li>
-	    <li class="nav-item">
-
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames1" aria-expanded="true" aria-controls="collapseForm">
-
-                    <i class="fas fa-lock"></i>
-
-                    <span>Encode & Decode</span>
-
-                </a>
-
-                <div id="collapseGames1" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-
-                    <div class="py-2 collapse-inner rounded">
-
-                        <h6 class="collapse-header">Encode & Decode Features</h6>
-
-            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base64&encode=@moexti">Encode Base64</a>
-
-            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base64&decode=Q2hlZW1zR2FudGVuZw==">Decode Base64</a>
-
-            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base32&encode=@moexti">Encode Base32</a>
-
-            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base32&decode=INUGKZLNONDWC3TUMVXGO===">Decode Base32</a>
-
-            </div>
-
-            </div>
-
-        </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
-          aria-controls="collapseother">
-          <i class="fas fa-folder-open"></i>
-          <span>Others</span>
-        </a>
-        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Other Menu</h6>
-            <a class="collapse-item" href="api/nulis?text=moexti&apikey=berkahesport">Nulis Buku</a>
-            <a class="collapse-item" href="api/infonpm?query=apiberkahesport&hostname=moexti&apikey=berkahesport">Info NPM</a>
-            <a class="collapse-item" href="api/infogempa?apikey=berkahesport">Info Gempa Terkini</a>
-            <a class="collapse-item" href="api/infocuaca?provinsi=jakarta&apikey=berkahesport">Info Cuaca Indonesia</a>
-            <a class="collapse-item" href="api/infocuaca/dunia?apikey=berkahesport">Info Cuaca Dunia</a>
-            <a class="collapse-item" href="api/infocuaca/bandara?apikey=berkahesport">Info Cuaca Bandara</a>
-            <a class="collapse-item" href="api/infotsunami?apikey=berkahesport">Info Tsunami</a>
-            <a class="collapse-item" href="api/covidindo?apikey=berkahesport">Covid Indo</a>
-            <a class="collapse-item" href="api/covidworld?apikey=berkahesport">Covid World</a>
-            <a class="collapse-item" href="api/short/tiny?url=google.com&apikey=berkahesport">Short Link</a>
-            <a class="collapse-item" href="api/wikipedia?search=jembatan&apikey=berkahesport">Wikipedia</a>
-            <a class="collapse-item" href="api/drakorasia?search=tale&apikey=berkahesport">Drakor Asia</a>
-            <a class="collapse-item" href="api/fakedata?country=en&apikey=berkahesport">Fake Data</a>
-            <a class="collapse-item" href="api/hilih?kata=aku kan ganteng banget&apikey=berkahesport">Kata Hilih</a>
-            <a class="collapse-item" href="api/liriklagu?lagu=sayang&apikey=berkahesport">Lirik Lagu</a>
-            <a class="collapse-item" href="api/chordlagu?lagu=sayang&apikey=berkahesport">Chord Lagu</a>
-            <a class="collapse-item" href="api/kbbi?kata=pohon&apikey=berkahesport">KBBI</a>
-            <a class="collapse-item" href="api/kodepos?kota=jakarta&apikey=berkahesport">Kode Pos</a>
-            <a class="collapse-item" href="api/translate?kata=hi&apikey=berkahesport">Translate</a>
-            <a class="collapse-item" href="api/gabut?apikey=berkahesport">Gabut</a>
-          </div>
-        </div>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-<div class="version"><b>Contact me</b></div>
-      </div>
-      <li class="nav-item">
-          
-            <a class="nav-link collapsed" href="api/about">
-            <i class="fas fa-fw fa-info"></i>
-                    <span>About This Web</span>
-            </a>
-      </li>
-      <li class="nav-item">
-          
-            <a class="nav-link collapsed" href="https://wa.me/62895371549895">
-            <i class="fab fa-fw fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-            </a>
-      </li>
-    
-      <li class="nav-item">
-            <a class="nav-link collapsed" href="https://instagram.com/moexti">
-            <i class="fab fa-fw fa-instagram"></i>
-                    <span>Instagram</span>
-            </a>
-          <li class="nav-item">
-            <a class="nav-link collapsed" href="https://t.me/moexti">
-            <i class="fab fa-fw fa-telegram"></i>
-                    <span>Telegram</span>
-            </a>
-      </li>
-       <li class="nav-item">
-            <a class="nav-link collapsed" href="https://www.youtube.com/channel/UCG_Xj6eHBMaW9HTHTya9q6w">
-            <i class="fab fa-fw fa-youtube"></i>
-                    <span>YouTube</span>
-            </a>
-      </li>
-      <li class="nav-item">
-            <a class="nav-link collapsed" href="https://github.com/BerkahEsport">
-            <i class="fab fa-fw fa-github"></i>
-                    <span>Github</span>
-            </a>
-      </li>
-       <li class="nav-item">
-            <a class="nav-link collapsed" href="https://apriza09.github.io/covid-id/">
-            <i class="fas fa-biohazard"></i>
-                    <span>Info Covid</span>
-            </a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="version"><b>Dipersembahkan oleh @moexti</b></div>
-    </ul>
-    <!-- Sidebar -->
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-        <!-- TopBar -->
-
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                aria-labelledby="searchDropdown">
-                <form class="navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-1 small" placeholder="What do you want to look for?"
-                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Notificacion
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-bell text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">March 12, 2021</div>
-                    <span class="font-weight-bold">This rest api was made!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">March 29, 2021</div>
-                    This website has some problems!!!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">May 2, 2021</div>
-                    This website is back on as usual ✨
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-envelope fa-fw"></i>
-                <span class="badge badge-warning badge-counter">2</span>
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header">
-                  Message 
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://raw.githubusercontent.com/BerkahEsport/api-be/main/logo2.png" style="max-width: 60px" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div class="font-weight-bold">
-                    <div class="text-truncate">Jangan lupa donasi ya Bang/Sis ！！！.
-                     </div>
-                    <div class="small text-gray-500">@moexti · 2s</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://raw.githubusercontent.com/BerkahEsport/api-be/main/views/logo.ico" style="max-width: 60px" alt="">
-                    <div class="status-indicator bg-default"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Terima kasih donasinya, Semoga dilancarkan rezekinya...
-                    </div>
-                    <div class="small text-gray-500">BerkahEsport · 1s</div>
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-tasks fa-fw"></i>
-                <span class="badge badge-success badge-counter">3</span>
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header">
-                  Information
-                </h6>
-                <a class="dropdown-item align-items-center" href="#">
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Want to add features 
-                      <div class="small float-right"><b>50%</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </a>
-                <a class="dropdown-item align-items-center" href="#">
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Lazy to add features
-                      <div class="small float-right"><b>50%</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </a>
-                <a class="dropdown-item align-items-center" href="#">
-                  <div class="mb-3">
-                    <div class="small text-gray-500">I'm a beginner
-                      <div class="small float-right"><b>100%</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="https://www.instagram.com/moexti">View All Information</a>
-              </div>
-            </li>
-            <div class="topbar-divider d-none d-sm-block"></div>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded-circle" src="img/logo.jpg" style="max-width: 60px">
-                <span class="ml-2 d-none d-lg-inline text-white small"> @moexti </span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="https://wa.me/62895371549895">
-                  <i class="fab fa-fw fa-whatsapp"></i>
-                  Whatsapp
-                </a>
-                <a class="dropdown-item" href="https://t.me/moexti">
-                  <i class="fab fa-fw fa-telegram"></i>
-                  Telegram
-                </a>
-                <a class="dropdown-item" href="https://www.instagram.com/moexti">
-                  <i class="fab fa-fw fa-instagram"></i>
-                  Instagram
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://api-moexti.herokuapp.com/">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <!-- Topbar -->  
-
-      <!-- Container Fluid-->
-        <div class="container-fluid" id="container-wrapper">
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Beranda</li>
-            </ol>
-          </div>
-
 <!-- TOPUP Mobile Legends -->
 <container>
 <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/animate.css" />
@@ -1766,6 +1128,651 @@ $('#send').click(function() {
 </container>                         
             
 <!-- TOPUP Mobile Legends -->
+
+
+
+
+
+
+<body id="page-top" onload="getvisitor();">
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+        <div class="sidebar-brand-icon">
+        	<img src="https://i.ibb.co/VQQ68JS/berkahesport.jpg">
+        </div>
+        <div class="sidebar-brand-text mx-3">API - BERKAHESPORT</div>
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fire"></i>
+          <span>All Api's</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        API Features
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="fas fa-download"></i>
+          <span>Social Media</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Media Features</h6>
+            <a class="collapse-item" href="api/yutub/video?url=https://youtu.be/VCgpxHZAkd8&apikey=berkahesport">YouTube Video</a>
+            <a class="collapse-item" href="api/yutub/audio?url=https://youtu.be/VCgpxHZAkd8&apikey=berkahesport">YouTube Audio</a>
+            <a class="collapse-item" href="api/yutub/search?video=BerkahEsport&apikey=berkahesport">YouTube Search</a>
+            <a class="collapse-item" href="api/fbdown/?url=https://web.facebook.com/berkahesport.id/photos/a.298894315572014/298894285572017&apikey=berkahesport">Facebook</a>
+            <a class="collapse-item" href="api/tiktod/?url=MASUKIN_URL&apikey=berkahesport">Tiktok</a>
+            <h6 class="collapse-header">Stalker Features</h6>
+            <a class="collapse-item" href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=berkahesport">Tiktok Stalk</a>
+            <a class="collapse-item" href="api/ig/stalk?username=moexti&apikey=berkahesport">Instagram Stalk</a>
+            <a class="collapse-item" href="api/github/stalk?username=BerkahEsport&apikey=berkahesport">Github Stalk</a>
+            <a class="collapse-item" href="api/repository/stalk?username=moexti&apikey=berkahesport">Repository Stalk</a>
+            </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true"
+          aria-controls="collapseIslamic">
+          <i class="fas fa-star-and-crescent"></i>
+          <span>Islamic</span>
+        </a>
+        <div id="collapseIslamic" class="collapse" aria-labelledby="headingIslamic" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Islamic Features</h6>
+            <a class="collapse-item" href="api/hadits?kitab=bukhari&nomor=52&apikey=berkahesport">Hadits Shahih</a>
+            <a class="collapse-item" href="api/quran?surah=1&ayat=2&apikey=berkahesport">Al Qur'an</a>
+            <a class="collapse-item" href="api/muslim/tahlil?apikey=berkahesport">Doa Tahlil</a>
+            <a class="collapse-item" href="api/muslim/wirid?apikey=berkahesport">Doa Wirid</a>
+            <a class="collapse-item" href="api/muslim/asmaulhusna?apikey=berkahesport">Asmaul Husna</a>
+            <a class="collapse-item" href="api/muslim/doaharian?apikey=berkahesport">Doa Harian</a>
+            <a class="collapse-item" href="api/muslim/ayatkursi?apikey=berkahesport">Ayat Kursi</a>
+            <a class="collapse-item" href="api/kisahnabi?nabi=muhammad&apikey=berkahesport">Kisah Nabi</a>
+            <a class="collapse-item" href="api/muslim/niatshalat?apikey=berkahesport">Niat Shalat</a>
+            <a class="collapse-item" href="api/muslim/bacaanshalat?apikey=berkahesport">Bacaan Shalat</a>
+           <!-- <a class="collapse-item" href="api/jadwalshalat?kota=jakartautara&apikey=berkahesport">Jadwal Shalat</a> -->
+          </div>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKodepos" aria-expanded="true"
+          aria-controls="collapseKodepos">
+          <i class="fas fa-images"></i>
+          <span>Images</span>
+        </a>
+        <div id="collapseKodepos" class="collapse" aria-labelledby="headingKodepos" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Images Features</h6>
+            <a class="collapse-item" href="api/wallpaper/teknologi?apikey=berkahesport">Wallpaper Teknologi</a>
+            <a class="collapse-item" href="api/wallpaper/programming?apikey=berkahesport">Wallpaper Programming</a>
+            <a class="collapse-item" href="api/wallpaper/cyberspace?apikey=berkahesport">Wallpaper CyberSpace</a>
+            <a class="collapse-item" href="api/wallpaper/muslim?apikey=berkahesport">Wallpaper Muslim</a>
+            <a class="collapse-item" href="api/wallpaper/pegunungan?apikey=berkahesport">Wallpaper Mountain View</a>
+            </div>
+            </div>
+            </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGithub"
+          aria-expanded="true" aria-controls="collapseGithub">
+          <i class="fas fa-random"></i>
+          <span>Random</span>
+        </a>
+        <div id="collapseGithub" class="collapse" aria-labelledby="headingGithub" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Random Features</h6>
+            <a class="collapse-item" href="api/randomquote?apikey=berkahesport">Quotes</a>
+            <a class="collapse-item" href="api/randomquote/muslim?apikey=berkahesport">Quotes Islami</a>
+            <a class="collapse-item" href="api/quotes/kanye?apikey=berkahesport">Quotes Kanye</a>
+            <a class="collapse-item" href="api/random/asmaulhusna?apikey=berkahesport">Asmaul Husna</a>
+            <a class="collapse-item" href="api/random/meme?apikey=berkahesport">Meme</a>
+            <a class="collapse-item" href="api/random/wallpaper?apikey=berkahesport">Wallpaper</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker"
+          aria-expanded="true" aria-controls="collapseMaker">
+          <i class="fas fa-images"></i>
+          <span>Text Maker 2D</span>
+        </a>
+        <div id="collapseMaker" class="collapse" aria-labelledby="headingMaker" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">TextMaker2D Features</h6>
+            <a class="collapse-item" href="api/maker?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 1</a>
+            <a class="collapse-item" href="api/maker2?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 2</a>
+            <a class="collapse-item" href="api/maker3?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 3</a>
+            <a class="collapse-item" href="api/maker4?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 4</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker3D"
+          aria-expanded="true" aria-controls="collapseMaker3D">
+          <i class="fas fa-images"></i>
+          <span>Text Maker 3D</span>
+        </a>
+        <div id="collapseMaker3D" class="collapse" aria-labelledby="headingMaker3D" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">TextMaker3D Features</h6>
+            <a class="collapse-item" href="api/maker3d?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 1</a>
+            <a class="collapse-item" href="api/maker3d/no2?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 2</a>
+            <a class="collapse-item" href="api/maker3d/no3?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 3</a>
+            <a class="collapse-item" href="api/maker3d/no4?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 4</a>
+            <a class="collapse-item" href="api/maker3d/no5?text=Ya Allah Kabulkan DoaKu&apikey=berkahesport">Maker 5</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMakerOther"
+          aria-expanded="true" aria-controls="collapseMakerOther">
+          <i class="fas fa-images"></i>
+          <span>Text Maker Others</span>
+        </a>
+        <div id="collapseMakerOther" class="collapse" aria-labelledby="headingMakerOther" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">TextMaker Others Features</h6>
+            <a class="collapse-item" href="api/maker/special/transformer?text=Transformer&apikey=berkahesport">Transformer</a>
+            <a class="collapse-item" href="api/maker/special/epep?text=berkahesport&apikey=berkahesport">Sertifikat Epep</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseText" aria-expanded="true"
+          aria-controls="collapseText">
+          <i class="fas fa-images"></i>
+          <span>Photooxy</span>
+        </a>
+        <div id="collapseText" class="collapse" aria-labelledby="headingText" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Photooxy Features</h6>
+            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&theme=glitch&apikey=berkahesport">Glitch</a>
+            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&text3=gwganteng&theme=google-suggestion&apikey=berkahesport">Google Suggestion</a>
+            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=pubg&apikey=berkahesport">PUBG</a>
+            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=battlefield&apikey=berkahesport">BattleField</a>
+            <a class="collapse-item" href="api/textmaker/senja?text=berkahesport&theme=coffee-cup&apikey=berkahesport">Coffee Cup</a>
+            <a class="collapse-item" href="api/textmaker/senja?text=berkahesport&theme=coffee-cup2&apikey=berkahesport">Coffee Cup 2</a>
+            <a class="collapse-item" href="api/textmaker/metallic?text=berkahesport&theme=neon&apikey=berkahesport">Neon</a>
+            <a class="collapse-item" href="api/textmaker/metallic?text=berkahesport&theme=glow&apikey=berkahesport">Glow</a>
+            <a class="collapse-item" href="api/textmaker/alam?text=berkahesport&theme=summer&apikey=berkahesport">Summer</a>
+            <a class="collapse-item" href="api/textmaker/alam?text=berkahesport&theme=flower&apikey=berkahesport">Flower</a>
+            <a class="collapse-item" href="api/textmaker/random?text=berkahesport&theme=text-burn&apikey=berkahesport">Text Burn</a>
+            <a class="collapse-item" href="api/textmaker/random?text=berkahesport&theme=art-quote&apikey=berkahesport">Art Quote</a>
+            <a class="collapse-item" href="api/textmaker/roses?text=berkahesport&theme=wooden-boarch&apikey=berkahesport">Wooden Boarch</a>
+            <a class="collapse-item" href="api/textmaker/roses?text=berkahesport&theme=golden&apikey=berkahesport">Golden Roses</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
+          aria-controls="collapseAnime">
+          <i class="fas fa-tv"></i>
+          <span>Anime</span>
+        </a>
+        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Anime/Manga Features</h6>
+            <a class="collapse-item" href="api/anime/kusonime?search=planetarian&apikey=berkahesport">Kusonime</a>
+            <a class="collapse-item" href="api/manga?search=kimetsu no yaiba&apikey=berkahesport">Manga</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime3" aria-expanded="true"
+          aria-controls="collapseAnime3">
+          <i class="fas fa-mug-hot"></i>
+          <span>Asupan Timeline</span>
+        </a>
+        <div id="collapseAnime3" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Asupan Timeline Features</h6>
+            <a class="collapse-item" href="api/asupan/tiktok?apikey=berkahesport">Tiktok Random Video</a>
+            <a class="collapse-item" href="api/asupan?apikey=berkahesport">Asupan</a>
+		<a class="collapse-item" href="api/asupan/cecan?apikey=berkahesport">Asupan Cecan</a>
+
+            <a class="collapse-item" href="api/asupan/hijaber?apikey=berkahesport">Asupan Hijaber</a>
+            <a class="collapse-item" href="api/asupan/santuy?apikey=berkahesport">Asupan Santuy</a>
+            <a class="collapse-item" href="api/asupan/ukty?apikey=berkahesport">Asupan Ukhty</a>
+            <a class="collapse-item" href="api/asupan/bocil?apikey=berkahesport">Asupan Bocil</a>
+            <a class="collapse-item" href="api/asupan/ghea?apikey=berkahesport">Asupan Ghea</a>
+            <a class="collapse-item" href="api/asupan/rikagusriani?apikey=berkahesport">Asupan Rika</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime2" aria-expanded="true"
+          aria-controls="collapseAnime2">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>NSFW</span>
+        </a>
+        <div id="collapseAnime2" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">NSFW Features</h6>
+            <a class="collapse-item" href="api/nsfw/ass?apikey=berkahesport">Ass</a>
+            <a class="collapse-item" href="api/nsfw/ahegao?apikey=berkahesport">Ahegao</a>
+            <a class="collapse-item" href="api/nsfw/bdsm?apikey=berkahesport">Bdsm</a>
+            <a class="collapse-item" href="api/nsfw/blowjob?apikey=berkahesport">Blowjob</a>
+            <a class="collapse-item" href="api/nsfw/cuckold?apikey=berkahesport">Cuckold</a>
+            <a class="collapse-item" href="api/nsfw/cum?apikey=berkahesport">Cum</a>
+            <a class="collapse-item" href="api/nsfw/ero?apikey=berkahesport">Ero</a>
+            <a class="collapse-item" href="api/nsfw/femdom?apikey=berkahesport">Femdom</a>
+            <a class="collapse-item" href="api/nsfw/foot?apikey=berkahesport">Foot</a>
+            <a class="collapse-item" href="api/nsfw/gangbang?apikey=berkahesport">Gangbang</a>
+            <a class="collapse-item" href="api/nsfw/glasses?apikey=berkahesport">Glasses</a>
+            <a class="collapse-item" href="api/nsfw/hentai?apikey=berkahesport">Hentai</a>
+            <a class="collapse-item" href="api/nsfw/hentaigif?apikey=berkahesport">Hentai (GIF)</a>
+            <a class="collapse-item" href="api/nsfw/jahy?apikey=berkahesport">Jahy</a>
+            <a class="collapse-item" href="api/nsfw/masturbation?apikey=berkahesport">Masturbation</a>
+            <a class="collapse-item" href="api/nsfw/nsfwNeko?apikey=berkahesport">Neko</a>
+            <a class="collapse-item" href="api/nsfw/orgy?apikey=berkahesport">Orgy</a>
+            <a class="collapse-item" href="api/nsfw/panties?apikey=berkahesport">Panties</a>
+            <a class="collapse-item" href="api/nsfw/pussy?apikey=berkahesport">Pussy</a>
+            <a class="collapse-item" href="api/nsfw/thighs?apikey=berkahesport">Thighs</a>
+            <a class="collapse-item" href="api/nsfw/yuri?apikey=berkahesport">Yuri</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Games</span>
+                </a>
+                <div id="collapseGames" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Games Features</h6>
+            <a class="collapse-item" href="/api/kuis/caklontong?apikey=berkahesport">Cak Lontong</a>
+            <a class="collapse-item" href="/api/kuis/tebakgambar?apikey=berkahesport">Tebak Gambar</a>
+            <a class="collapse-item" href="/api/kuis/family100?apikey=berkahesport">Family 100</a>
+            </div>
+            </div>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGachaCewe" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fas fa-fire"></i>
+                    <span>Gacha Cewe</span>
+                </a>
+                <div id="collapseGachaCewe" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Cecan Features</h6>
+            <a class="collapse-item" href="/api/cewe/vietnam?apikey=berkahesport">Cecan Vietnam</a>
+            <a class="collapse-item" href="/api/cewe/malaysia?apikey=berkahesport">Cecan Malaysia</a>
+            <a class="collapse-item" href="/api/cewe/korea?apikey=berkahesport">Cecan Korea</a>
+            <a class="collapse-item" href="/api/cewe/indonesia?apikey=berkahesport">Cecan Indonesia</a>
+            <a class="collapse-item" href="/api/cewe/japan?apikey=berkahesport">Cecan Japan</a>
+            <a class="collapse-item" href="/api/cewe/thailand?apikey=berkahesport">Cecan Thailand</a>
+            <a class="collapse-item" href="/api/cewe/china?apikey=berkahesport">Cecan China</a>
+            </div>
+            </div>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFilmApik" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fas fa-film"></i>
+                    <span>FilmApik</span>
+                </a>
+                <div id="collapseFilmApik" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">FilmApik Features</h6>
+            <a class="collapse-item" href="/api/filmapik/search?film=avenger&apikey=berkahesport">Cari Film</a>
+            <a class="collapse-item" href="/api/filmapik/kategori?film=action&apikey=berkahesport">Cari Kategori Film</a>
+            <a class="collapse-item" href="/api/filmapik/terbaru?apikey=berkahesport">Film Terbaru</a>
+            <a class="collapse-item" href="/api/filmapik/play?id=142455&apikey=berkahesport">Play Film</a>
+            </div>
+            </div>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLk21" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fas fa-film"></i>
+                    <span>Lk21</span>
+                </a>
+                <div id="collapseLk21" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Lk21 Features</h6>
+            <a class="collapse-item" href="/api/lk21/search?film=avenger&apikey=berkahesport">Cari Film</a>
+            <a class="collapse-item" href="/api/lk21/terbaru?apikey=berkahesport">Film Terbaru</a>
+            <a class="collapse-item" href="/api/lk21/comingsoon?apikey=berkahesport">Film Yg Akan Datang</a>
+            <a class="collapse-item" href="/api/lk21/tvseries?apikey=berkahesport">Series TV</a>
+            <a class="collapse-item" href="/api/lk21/year?tahun=2021&apikey=berkahesport">Berdasarkan Tahun</a>
+            <a class="collapse-item" href="/api/lk21/country?negara=indonesia&apikey=berkahesport">Berdasarkan Negara</a>
+            <a class="collapse-item" href="/api/lk21/genre?tipe=action&apikey=berkahesport">Berdasarkan Genre</a>
+            </div>
+            </div>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNews" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fas fa-compass"></i>
+                    <span>News</span>
+                </a>
+                <div id="collapseNews" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">News Features</h6>
+            <a class="collapse-item" href="api/news">Jenis Berita</a>
+            <a class="collapse-item" href="api/news/cnn?type=JENIS_BERITA&apikey=berkahesport">Cnn News</a>
+            <a class="collapse-item" href="api/news/cnbc?type=JENIS_BERITA&apikey=berkahesport">CnBc News</a>
+            <a class="collapse-item" href="api/news/republika?type=JENIS_BERITA&apikey=berkahesport">Republika News</a>
+            <a class="collapse-item" href="api/news/tempo?type=JENIS_BERITA&apikey=berkahesport">Tempo News</a>
+            <a class="collapse-item" href="api/news/antara?type=JENIS_BERITA&apikey=berkahesport">Antara News</a>
+            <a class="collapse-item" href="api/news/kumparan?type=JENIS_BERITA&apikey=berkahesport">Kumparan News</a>
+            </div>
+            </div>
+        </li>
+	    <li class="nav-item">
+
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames1" aria-expanded="true" aria-controls="collapseForm">
+
+                    <i class="fas fa-lock"></i>
+
+                    <span>Encode & Decode</span>
+
+                </a>
+
+                <div id="collapseGames1" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+
+                    <div class="py-2 collapse-inner rounded">
+
+                        <h6 class="collapse-header">Encode & Decode Features</h6>
+
+            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base64&encode=@moexti">Encode Base64</a>
+
+            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base64&decode=Q2hlZW1zR2FudGVuZw==">Decode Base64</a>
+
+            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base32&encode=@moexti">Encode Base32</a>
+
+            <a class="collapse-item" href="api/base?apikey=berkahesport&type=base32&decode=INUGKZLNONDWC3TUMVXGO===">Decode Base32</a>
+
+            </div>
+
+            </div>
+
+        </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
+          aria-controls="collapseother">
+          <i class="fas fa-folder-open"></i>
+          <span>Others</span>
+        </a>
+        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Other Menu</h6>
+            <a class="collapse-item" href="api/nulis?text=moexti&apikey=berkahesport">Nulis Buku</a>
+            <a class="collapse-item" href="api/infonpm?query=apiberkahesport&hostname=moexti&apikey=berkahesport">Info NPM</a>
+            <a class="collapse-item" href="api/infogempa?apikey=berkahesport">Info Gempa Terkini</a>
+            <a class="collapse-item" href="api/infocuaca?provinsi=jakarta&apikey=berkahesport">Info Cuaca Indonesia</a>
+            <a class="collapse-item" href="api/infocuaca/dunia?apikey=berkahesport">Info Cuaca Dunia</a>
+            <a class="collapse-item" href="api/infocuaca/bandara?apikey=berkahesport">Info Cuaca Bandara</a>
+            <a class="collapse-item" href="api/infotsunami?apikey=berkahesport">Info Tsunami</a>
+            <a class="collapse-item" href="api/covidindo?apikey=berkahesport">Covid Indo</a>
+            <a class="collapse-item" href="api/covidworld?apikey=berkahesport">Covid World</a>
+            <a class="collapse-item" href="api/short/tiny?url=google.com&apikey=berkahesport">Short Link</a>
+            <a class="collapse-item" href="api/wikipedia?search=jembatan&apikey=berkahesport">Wikipedia</a>
+            <a class="collapse-item" href="api/drakorasia?search=tale&apikey=berkahesport">Drakor Asia</a>
+            <a class="collapse-item" href="api/fakedata?country=en&apikey=berkahesport">Fake Data</a>
+            <a class="collapse-item" href="api/hilih?kata=aku kan ganteng banget&apikey=berkahesport">Kata Hilih</a>
+            <a class="collapse-item" href="api/liriklagu?lagu=sayang&apikey=berkahesport">Lirik Lagu</a>
+            <a class="collapse-item" href="api/chordlagu?lagu=sayang&apikey=berkahesport">Chord Lagu</a>
+            <a class="collapse-item" href="api/kbbi?kata=pohon&apikey=berkahesport">KBBI</a>
+            <a class="collapse-item" href="api/kodepos?kota=jakarta&apikey=berkahesport">Kode Pos</a>
+            <a class="collapse-item" href="api/translate?kata=hi&apikey=berkahesport">Translate</a>
+            <a class="collapse-item" href="api/gabut?apikey=berkahesport">Gabut</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+<div class="version"><b>Contact me</b></div>
+      </div>
+      <li class="nav-item">
+          
+            <a class="nav-link collapsed" href="api/about">
+            <i class="fas fa-fw fa-info"></i>
+                    <span>About This Web</span>
+            </a>
+      </li>
+      <li class="nav-item">
+          
+            <a class="nav-link collapsed" href="https://wa.me/62895371549895">
+            <i class="fab fa-fw fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+            </a>
+      </li>
+    
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://instagram.com/moexti">
+            <i class="fab fa-fw fa-instagram"></i>
+                    <span>Instagram</span>
+            </a>
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="https://t.me/moexti">
+            <i class="fab fa-fw fa-telegram"></i>
+                    <span>Telegram</span>
+            </a>
+      </li>
+       <li class="nav-item">
+            <a class="nav-link collapsed" href="https://www.youtube.com/channel/UCG_Xj6eHBMaW9HTHTya9q6w">
+            <i class="fab fa-fw fa-youtube"></i>
+                    <span>YouTube</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://github.com/BerkahEsport">
+            <i class="fab fa-fw fa-github"></i>
+                    <span>Github</span>
+            </a>
+      </li>
+       <li class="nav-item">
+            <a class="nav-link collapsed" href="https://apriza09.github.io/covid-id/">
+            <i class="fas fa-biohazard"></i>
+                    <span>Info Covid</span>
+            </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version"><b>Dipersembahkan oleh @moexti</b></div>
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-1 small" placeholder="What do you want to look for?"
+                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Notificacion
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-bell text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">March 12, 2021</div>
+                    <span class="font-weight-bold">This rest api was made!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">March 29, 2021</div>
+                    This website has some problems!!!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">May 2, 2021</div>
+                    This website is back on as usual ✨
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <span class="badge badge-warning badge-counter">2</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message 
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://raw.githubusercontent.com/BerkahEsport/api-be/main/logo2.png" style="max-width: 60px" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Jangan lupa donasi ya Bang/Sis ！！！.
+                     </div>
+                    <div class="small text-gray-500">@moexti · 2s</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://raw.githubusercontent.com/BerkahEsport/api-be/main/views/logo.ico" style="max-width: 60px" alt="">
+                    <div class="status-indicator bg-default"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Terima kasih donasinya, Semoga dilancarkan rezekinya...
+                    </div>
+                    <div class="small text-gray-500">BerkahEsport · 1s</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-tasks fa-fw"></i>
+                <span class="badge badge-success badge-counter">3</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Information
+                </h6>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Want to add features 
+                      <div class="small float-right"><b>50%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Lazy to add features
+                      <div class="small float-right"><b>50%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">I'm a beginner
+                      <div class="small float-right"><b>100%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="https://www.instagram.com/moexti">View All Information</a>
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="img/logo.jpg" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small"> @moexti </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="https://wa.me/62895371549895">
+                  <i class="fab fa-fw fa-whatsapp"></i>
+                  Whatsapp
+                </a>
+                <a class="dropdown-item" href="https://t.me/moexti">
+                  <i class="fab fa-fw fa-telegram"></i>
+                  Telegram
+                </a>
+                <a class="dropdown-item" href="https://www.instagram.com/moexti">
+                  <i class="fab fa-fw fa-instagram"></i>
+                  Instagram
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://api-moexti.herokuapp.com/">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Topbar -->  
+
+      <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Beranda</li>
+            </ol>
+          </div>
+
+
 
 <div class="col-xl-3 col-md-6 mb-4">
 <div class="card h-100">
