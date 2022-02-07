@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta property="og:image" content="https://i.ibb.co/4KmpSKb/QRme.jpg" /> 
+
+<meta property="og:title" content="API - BERKAHESPORT" /> <meta property="og:description" content="Dipersembahkan oleh @moexti " /> 
+
+<link rel="shortcut icon" href="https://i.ibb.co/4KmpSKb/QRme.jpg" type="image/x-icon" />
+
+  <title>API - BERKAHESPORT</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/ruang-admin.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/animate.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/main.css" />
+<link href="https://docs.google.com/document/d/11Mjs2LXUiSdcXb27Fi-GFpr32SpSlkcshtPwqomMJJw/edit?usp=drivesdk" rel="stylesheet" />
+
+</head>
+
+<header class="header sticky-top">
+
+    <div class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center navbar-brand bg-warning">
+                        <a class="navbar-brand d-flex align-items-center" href="https://zeeshopgaming.com/">
+                          <strong class="text-white"><font color='#FF0059'>B</font><font color='#FF1C00'>E</font><font color='#FF8100'>R</font>
+                            <font color='#FFE600'>K</font><font color='#A1FF00'>A</font><font color='#2FFF00'>H</font>
+                            <font color='#00FF57'>E</font><font color='#00FFC6'>S</font><font color='#00C1FF'>P</font>
+                            <font color='#0062FE'>O</font><font color='#0C00FF'>R</font><font color='#7D00FF'>T</font>
+                            <font color='#FFFFFF'>.</font><font color='#FFFFFF'>I</font><font color='#FFFFFF'>D</font> </strong>
+                        </a>
+
+                        <div>
+                            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon my-toggler"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar float-right rounded mt-1" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                 
+                                 <li class="nav-item py-2">
+                                        <a class="page-scroll" href="https://apiberkahesport.herokuapp.com/"><i class="fas fa-home"></i> Home</a>
+                                    </li>
+                                 
+                                  <li class="nav-item py-2">
+                                        <a class="page-scroll" href="./kalkulatormw"><i class="fas fa-calculator"></i> Kalkulator Magic Wheel</a>
+                                      </li>  
+                                      
+                                 <li class="nav-item py-2">
+                                        <a class="page-scroll" href="./kalkulatormz"><i class="fas fa-calculator"></i> Kalkulator Zodiac</a>
+                                      </li> 
+                        
+                                       
+ 
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- navbar collapse -->
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div> <!-- navbar area -->
+
+</header>
+
+<section id="home" class="custom_gradient hero-section img-bg bg-white" style="padding-top: 40px !important;padding-bottom:5px;">
+    <div class="container">
+        <div class="row my-4">
+
+            <div class="col-sm-5 col-12 mb-5">
+                <img src="https://zeeshopgaming.com/img/zodiac-wp.jpg" class="img-fluid rounded"/>
+                <h5 class="text-white mt-3 mb-1">Kalkulator Zodiac</h5>
+                <small class="text-white">Kalkulator ini berfungsi sebagai panduan total maksimal diamond yang kamu butuhkan untuk mendapatkan skin Zodiac.<br/></small>
+            </div>
+
+            <div class="col-sm-7 col-12">
+                <form method="post" target="">
+                    <div class="row">
+                         <h5 class="mb-2 text-white">Geser Sesuai Pointmu</h5>
+                        <div class="col-12 col-lg-8 mb-5">
+                            
+                               <div class="slidecontainer">
+                                   <p>&nbsp;</p>
+                    
+                          
+                     <span><font color='white'>Star Point: </font></span> <span id="f" style="font-weight:bold;color:#30cdf8"></span><br/>
+                      <input type="range" min="0" max="99" value="50" name="sld6" class="slider" id="myRange" onchange="show_value2(this.value)">
+                      <font color='white'>Maksimal Butuh: </font><span id="slider_value2" style="color:white;font-weight:bold;"></span>
+
+                     <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com/img/diamond.svg"/><br>    
+
+                     
+                      
+<script>
+function show_value2(x)
+{
+
+if(x<90){
+yz = Math.ceil((2000-x*20)*850/1000); }
+
+if(x>89){
+yz = Math.ceil((2000-x*20)); }
+
+document.getElementById("slider_value2").innerHTML=yz;
+
+}
+</script>
+
+
+
+<script>
+var slideCol = document.getElementById("myRange");
+var y = document.getElementById("f");
+y.innerHTML = slideCol.value;
+
+slideCol.oninput = function() {
+y.innerHTML = this.value;
+}
+
+</script>
+
+
+</div>
+<br/>
+
+                    <div class="col-lg-6 my-2">
+                    <center><a onclick="window.location.href='https://apiberkahesport.herokuapp.com/topup/topup'" class="d-flex align-items-center btn btn-confrim px-4 py-2 btn-lg border">
+                        <span>Cek Harga</span>
+                    </a></center>
+                </div>
+                     
+                         
+                </form>
+            </div>
+
+
+         
+        </div>
+    </div>
+</section>
+
+<script src="https://zeeshopgaming.com/assets/js/bootstrap.min.js"></script>
+<script src="https://zeeshopgaming.com/assets/js/main.js"></script>
+<script src="https://zeeshopgaming.com/assets/js//jquery-3.5.1.min.js"></script>
+
+<script src="https://zeeshopgaming.com/sw.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
+</script>  
+
+</body>
+<script>
+    
+    window.addEventListener('contextmenu', function (e) { 
+        // do something here... 
+        e.preventDefault(); 
+        }, false);
+        
+</script>
+<script data-pagespeed-no-defer>(function(){function f(b){var a=window;if(a.addEventListener)a.addEventListener("load",b,!1);else if(a.attachEvent)a.attachEvent("onload",b);else{var c=a.onload;a.onload=function(){b.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var k=window.pagespeed;function l(b,a,c,g,h){this.h=b;this.i=a;this.l=c;this.j=g;this.b=h;this.c=[];this.a=0}l.prototype.f=function(b){for(var a=0;250>a&&this.a<this.b.length;++a,++this.a)try{document.querySelector(this.b[this.a])&&this.c.push(this.b[this.a])}catch(c){}this.a<this.b.length?window.setTimeout(this.f.bind(this),0,b):b()};
+k.g=function(b,a,c,g,h){if(document.querySelector&&Function.prototype.bind){var d=new l(b,a,c,g,h);f(function(){window.setTimeout(function(){d.f(function(){for(var a="oh="+d.l+"&n="+d.j,a=a+"&cs=",b=0;b<d.c.length;++b){var c=0<b?",":"",c=c+encodeURIComponent(d.c[b]);if(131072<a.length+c.length)break;a+=c}k.criticalCssBeaconData=a;var b=d.h,c=d.i,e;if(window.XMLHttpRequest)e=new XMLHttpRequest;else if(window.ActiveXObject)try{e=new ActiveXObject("Msxml2.XMLHTTP")}catch(m){try{e=new ActiveXObject("Microsoft.XMLHTTP")}catch(n){}}e&&
+(e.open("POST",b+(-1==b.indexOf("?")?"?":"&")+"url="+encodeURIComponent(c)),e.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),e.send(a))})},0)})}};k.criticalCssBeaconInit=k.g;})();
+pagespeed.selectors=[".custom-toggler .navbar-toggler-icon",".custom-toggler.navbar-toggler",".custom_gradient",".custom_rounded",".navbar",".navbar-area",".slidecontainer",".slider","body"];pagespeed.criticalCssBeaconInit('/ngx_pagespeed_beacon','https://zeeshopgaming.com/calculator/magic-wheel-mobile-legends','c_DGtnzDvR','1RY04RxbcfQ',pagespeed.selectors);</script><noscript class="psa_add_styles"><link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/animate.css"><link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/bootstrap.min.css"><link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/LineIcons.2.0.css"><link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/main-slider.css"><style>.slidecontainer{width:100%}.slider{-webkit-appearance:none;width:100%;height:25px;background:#30cdf8;outline:none;opacity:.7;-webkit-transition:.2s;transition:opacity .2s}.slider:hover{opacity:1}.slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:25px;height:25px;background:#305db8;cursor:pointer}.slider::-moz-range-thumb{width:25px;height:25px;background:#000;cursor:pointer}</style><style>.custom_rounded{border-radius:.75rem!important}body{background-color:transparent!important}.custom_gradient{background-color:red;background-image:linear-gradient(to right,#260026 0%,#260026 100%)}.navbar{padding-left:0!important;padding-right:0!important;padding-top:1!important;padding-bottom:1!important}.navbar-area{top:0!important;background-color:#fff}.custom-toggler .navbar-toggler-icon{border-color:#420842}.custom-toggler.navbar-toggler{border-color:#420842}</style></noscript><script data-pagespeed-no-defer>(function(){function b(){var a=window,c=e;if(a.addEventListener)a.addEventListener("load",c,!1);else if(a.attachEvent)a.attachEvent("onload",c);else{var d=a.onload;a.onload=function(){c.call(this);d&&d.call(this)}}};var f=!1;function e(){if(!f){f=!0;for(var a=document.getElementsByClassName("psa_add_styles"),c=0,d;d=a[c];++c)if("NOSCRIPT"==d.nodeName){var k=document.createElement("div");k.innerHTML=d.textContent;document.body.appendChild(k)}}}function g(){var a=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||null;a?a(function(){window.setTimeout(e,0)}):b()}
+var h=["pagespeed","CriticalCssLoader","Run"],l=this;h[0]in l||!l.execScript||l.execScript("var "+h[0]);for(var m;h.length&&(m=h.shift());)h.length||void 0===g?l[m]?l=l[m]:l=l[m]={}:l[m]=g;})();
+pagespeed.CriticalCssLoader.Run();</script></html>
