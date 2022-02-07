@@ -15,6 +15,17 @@ router.get('/api/about', (req, res) => {
     res.sendFile(__path + '/views/about.html')
 })
 
+router.get('/mlbb/topup', (req, res) => {
+        res.sendFile(__path + '/views/topup/topup.html')
+})
+
+router.get('/mlbb/kalkulatormw', (req, res) => {
+    res.sendFile(__path + '/views/topup/kalkulatormw.html')
+})
+router.get('/mlbb/kalkulatormz', (req, res) => {
+    res.sendFile(__path + '/views/topup/kalkulatormz.html')
+})   
+
 router.get('/api/news', (req, res) => {
     res.redirect('https://api-berita-indonesia.vercel.app/cnn/terbaru')
 })
