@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta property="og:image" content="https://i.ibb.co/4KmpSKb/QRme.jpg" /> 
+
+<meta property="og:title" content="API - BERKAHESPORT" /> <meta property="og:description" content="Dipersembahkan oleh @moexti " /> 
+
+<link rel="shortcut icon" href="https://i.ibb.co/4KmpSKb/QRme.jpg" type="image/x-icon" />
+
+  <title>API - BERKAHESPORT</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/ruang-admin.min.css" rel="stylesheet" />
+<link href="https://docs.google.com/document/d/11Mjs2LXUiSdcXb27Fi-GFpr32SpSlkcshtPwqomMJJw/edit?usp=drivesdk" rel="stylesheet" />
+
+</head>
+<body>
+<!-- TOPUP Mobile Legends -->
+<container>
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/animate.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/main.css" />
+    
+    <link rel="manifest" href="https://zeeshopgaming.com/manifest2.json" />
+    <script type="text/javascript">
+    
+      let game;
+      
+       game = 'ml';  game = 'ml';    
+      
+      </script>
+    <style>
+      
+    
+    
+    
+    
+    
+    .custom_rounded
+    {
+        border-radius: 1rem!important;
+    }
+    body
+    {
+        background-color: transparent!important;
+    }
+    .custom_gradient
+    {
+        background-color: red;
+        background-image: linear-gradient(to right,#260026 0%,#260026 100%);
+    }
+    .navbar
+    {
+        padding: 5px!important;
+    }
+    .navbar-area
+    {
+        top: 0!important;
+        background-color: #fff;
+    }
+    .custom-toggler .navbar-toggler-icon
+    {
+        border-color: #420842;
+    }
+    .custom-toggler.navbar-toggler
+    {
+        border-color: #420842;
+    }
+    .accordion-button:not(.collapsed)::after
+    {
+        background-image: none!important;
+    }
+    .accordion-button::after
+    {
+        background-image: none!important;
+    }
+    </style>
+    
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/animate.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="https://zeeshopgaming.com/assets/css/main.css" />
+    
+    <link rel="manifest" href="https://zeeshopgaming.com/manifest2.json" />
+    
+    
+    
+    
+    <style>
+    .custom_rounded
+    {
+        border-radius: 1rem!important;
+    }
+    body
+    {
+        background-color: transparent!important;
+    }
+    .custom_gradient
+    {
+        background-color: red;
+        background-image: linear-gradient(to right,#260026 0%,#260026 100%);
+    }
+    .navbar
+    {
+        padding: 5px!important;
+    }
+    .navbar-area
+    {
+        top: 0!important;
+        background-color: #fff;
+    }
+    .custom-toggler .navbar-toggler-icon
+    {
+        border-color: #420842;
+    }
+    .custom-toggler.navbar-toggler
+    {
+        border-color: #420842;
+    }
+    .accordion-button:not(.collapsed)::after
+    {
+        background-image: none!important;
+    }
+    .accordion-button::after
+    {
+        background-image: none!important;
+    }
+    </style>
+    
+    
+       <!-- ========================= preloader start ========================= -->
+    <!--div class="preloader">
+        
+    </div-->
+    <!-- preloader end -->
+      <section id="home" class="custom_gradient hero-section img-bg bg-white" style="padding-top:1px !important;padding-bottom:10px;">
+        <div class="container">
+            <div class="row my-5">
+    
+            <div class="col-sm-5 col-12 mb-4">
+                <img src="https://zeeshopgaming.com//img/th-mlbb.jpg" class="img-fluid rounded" width='100%'/>
+                <h5 class="text-white mt-3 mb-1">Mobile Legends: Fast</h5>
+                <small class="text-white">
+                    - Proses kilat 1-15 menit sesuai antrian.<br>- Topup 344 untuk claim recharge 250 <br>- Topup 601 untuk claim recharge 500                                
+                    
+                                    
+                                    
+                    
+                </small>
+            </div>
+    
+            <div class="col-sm-7 col-12">
+                <form id="form" method="post">
+                    <div class="row">
+                    <h5 class="mb-2 text-white">1. Masukkan ID</h5>
+                        <div class="col-12 col-lg-8 mb-3">
+                            <div class="input-group mb-3">
+                            <input type="number" name="id" id="id" class="form-control form-control-lg shadow-none w-25 auto-save" placeholder="ID Game" required>
+                            <input type="number" name="server" id="server" class="form-control form-control-lg shadow-none auto-save" placeholder="( Server ) " required>
+                            </div>
+                        <strong class="text-dark rounded px-2 py-1 mt-2 bg-light-purple" data-user="undefined" id="userinfo" style="display: none;"></strong>
+                        <strong class="text-dark rounded px-2 py-1 mt-2 bg-light-purple" data-tipeakun="undefined" id="tipeakun" style="display: none;"></strong>
+                        </div>
+                    </div>    
+                </form>
+            <div class="col-sm-7 col-12">
+                <form id="form" method="post">
+                    <div class="row">
+                    <h5 class="mb-2 text-white">2. Masukkan Sisa Diamond</h5>
+                        <div class="col-12 col-lg-8 mb-3">
+                            <div class="input-group mb-3">
+                            <input type="number" name="sisa" id="sisa" class="form-control form-control-lg shadow-none w-25 auto-save" placeholder="Sisa Diamond" required>
+                            </div>
+                        <strong class="text-dark rounded px-2 py-1 mt-2 bg-light-purple" data-diamond="undefined" id="sisadiamond" style="display: none;"></strong>
+                        </div>
+                    </div>    
+                </form>
+     
+                <div class="row gx-1 mb-3">
+                <h5 class="mb-2 text-white">3. Pilih Paket </h5>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="11000" data-price_ewallet="12000" data-price_pulsa="15000" data-name=" 39 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 39 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="23000" data-price_ewallet="24000" data-price_pulsa="30000" data-name=" 86 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 86 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="35000" data-price_ewallet="36000" data-price_pulsa="45000" data-name=" 125 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 125 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="44000" data-price_ewallet="45000" data-price_pulsa="55000" data-name=" 172 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 172 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="56000" data-price_ewallet="57000" data-price_pulsa="70000" data-name=" 211 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 211 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="65000" data-price_ewallet="67000" data-price_pulsa="85000" data-name=" 257 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 257 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="77000" data-price_ewallet="79000" data-price_pulsa="100000" data-name=" 297 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 297 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="86000" data-price_ewallet="89000" data-price_pulsa="110000" data-name=" 344 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 344 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="98000" data-price_ewallet="101000" data-price_pulsa="125000" data-name=" 383 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 383 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="107000" data-price_ewallet="110000" data-price_pulsa="135000" data-name=" 429 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 429 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="112000" data-price_ewallet="115000" data-price_pulsa="140000" data-name=" 442 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 442 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="129000" data-price_ewallet="133000" data-price_pulsa="165000" data-name=" 514 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 514 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="141000" data-price_ewallet="145000" data-price_pulsa="180000" data-name=" 551 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 551 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="149000" data-price_ewallet="153000" data-price_pulsa="190000" data-name=" 601 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 601 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="161000" data-price_ewallet="166000" data-price_pulsa="205000" data-name=" 640 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 640</center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="169000" data-price_ewallet="174000" data-price_pulsa="215000" data-name=" 706 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 706 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="181000" data-price_ewallet="187000" data-price_pulsa="230000" data-name=" 745 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 745 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="191000" data-price_ewallet="197000" data-price_pulsa="245000" data-name=" 792 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 792 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="203000" data-price_ewallet="210000" data-price_pulsa="260000" data-name=" 831 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 831 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="212000" data-price_ewallet="218000" data-price_pulsa="270000" data-name=" 878 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 878 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="224000" data-price_ewallet="231000" data-price_pulsa="285000" data-name=" 917 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 917 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="233000" data-price_ewallet="240000" data-price_pulsa="295000" data-name=" 963 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 963 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="245000" data-price_ewallet="253000" data-price_pulsa="310000" data-name=" 1001 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 1001 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="254000" data-price_ewallet="262000" data-price_pulsa="325000" data-name=" 1050 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 1050 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="266000" data-price_ewallet="274000" data-price_pulsa="340000" data-name=" 1089 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 1089 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="275000" data-price_ewallet="283000" data-price_pulsa="350000" data-name=" 1135 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 1135 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="299000" data-price_ewallet="308000" data-price_pulsa="380000" data-name=" 1220 Diamond" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                                            <img style="margin-right: 3px !important;" height="18px" src="https://zeeshopgaming.com//img/diamond.svg" alt="" />  
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> 1220 </center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="109000" data-price_ewallet="113000" data-price_pulsa="140000" data-name=" Starlight dan 8 DM" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> Starlight + 8 DM</center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="109000" data-price_ewallet="113000" data-price_pulsa="140000" data-name=" Twilight Promo" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> Twilight Promo</center></div>
+                         
+                        </div>
+                    </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-4 py-1 mb-0" style="cursor: pointer;"> 
+                        <div data-price_bank="239000" data-price_ewallet="247000" data-price_pulsa="300000" data-name=" Starlight Plus" class="bg-white border d-flex align-items-center justify-content-center p-2 custom_rounded text-dark paket" style="padding: 2px!important;">
+                        
+                        
+                        <div class="text-nowrap" style="font-size: 0.75em!important;"><center> Starlight Plus</center></div>
+                         
+                        </div>
+                    </div>
+                            </div>
+    
+                <div class="row">
+    <h5 class="mb-2 text-white">3. Pilih Pembayaran</h5>
+     
+                    <div class="accordion-item bg-dark mb-2">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <a onclick="remove_small('#small-ewallet');" class="accordion-button bg-light text-decoration-none" style="padding-right:0px!important;padding-left:15px!important;" data-bs-toggle="collapse" data-bs-target="#buka_tiga1" aria-expanded="false" aria-controls="buka_tiga1">
+                          <div class="row w-100">
+                            <div class="col-6 text-dark">
+                             E-WALLET
+                            </div>
+                            <div class="col-6 text-end p-0">
+                              <strong class="price_ewallet text-dark"></strong>
+                            </div>
+                            
+                            
+                            <div id="small-ewallet" class="col-12 text-end mt-2">
+                            
+                                                        
+                                     <img class="img-fluid" style="height:17px;" src="https://zeeshopgaming.com/img/payment/e-ovo.png">
+                                     
+                                                         
+                                     <img class="img-fluid" style="height:17px;" src="https://zeeshopgaming.com/img/payment/e-dana.png">
+                                     
+                                                         
+                                     <img class="img-fluid" style="height:17px;" src="https://zeeshopgaming.com/img/payment/e-gopay.png">
+                                     
+                                                         
+                                     <img class="img-fluid" style="height:17px;" src="https://zeeshopgaming.com/img/payment/e-qris.png">
+                                     
+                                                         
+                                     <img class="img-fluid" style="height:17px;" src="https://zeeshopgaming.com/img/payment/e-shopee.png">
+                                     
+                                                         
+                                     <img class="img-fluid" style="height:17px;" src="https://zeeshopgaming.com/img/payment/e-linkaja.png">
+                                     
+                                                      
+                            </div>
+                            
+                            
+                            
+                          </div>
+                        </a>
+                      </h2>
+                      <div id="buka_tiga1" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-light">
+                          <div class="row">
+    
+                           
+    
+                             
+    
+    
+                            <div class="col-4 md-4 col-4 mb-4 p-0">
+                              <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="167" data-name="OVO" data-payment="OVO" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                                <div class="row m-2 shadow-sm">
+                                  <div class="col-12">
+                                    <img class="img-fluid"  height="18px" src="https://zeeshopgaming.com/img/payment/e-ovo.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                             
+    
+    
+                            <div class="col-4 md-4 col-4 mb-4 p-0">
+                              <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="157" data-name="DANA" data-payment="DANA" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                                <div class="row m-2 shadow-sm">
+                                  <div class="col-12">
+                                    <img class="img-fluid"  height="18px" src="https://zeeshopgaming.com/img/payment/e-dana.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                             
+    
+    
+                            <div class="col-4 md-4 col-4 mb-4 p-0">
+                              <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="166" data-name="GOPAY" data-payment="GOPAY" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                                <div class="row m-2 shadow-sm">
+                                  <div class="col-12">
+                                    <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-gopay.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                             
+    
+    
+                            <div class="col-4 md-4 col-4 mb-4 p-0">
+                              <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="178" data-name="KODE QR" data-payment="QRis Code" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                                <div class="row m-2 shadow-sm">
+                                  <div class="col-12">
+                                    <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-qris.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                             
+    
+    
+                            <div class="col-4 md-4 col-4 mb-4 p-0">
+                              <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="158" data-name="SHOPEE PAY" data-payment="SHOPEE PAY" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                                <div class="row m-2 shadow-sm">
+                                  <div class="col-12">
+                                    <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-shopee.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                             
+    
+    
+                            <div class="col-4 md-4 col-4 mb-4 p-0">
+                              <div class="d-flex bg-white w-100 payment payment_ewallet text-dark rounded" data-adjs="13" data-name="LINK AJA" data-payment="LINK AJA" class="d-flex justify-content-between rounded p-3 border bg-white w-100 payment payment_ewallet">
+                                <div class="row m-2 shadow-sm">
+                                  <div class="col-12">
+                                    <img class="img-fluid" height="18px" src="https://zeeshopgaming.com/img/payment/e-linkaja.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                             
+    
+    
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+    
+    
+    
+    
+                    </div>
+                  </div>
+                                
+         
+    
+                <div class="col-12 mt-3">
+                    <button id="confirm" class="d-flex align-items-center btn btn-confrim px-4 py-2 btn-lg border">
+                      <a onClick="click">   <span>Lanjutkan</span> </a>
+                 
+                    <div style="margin-left: 20px;display: none;" id="loading" class="spinner-border spinner-border-sm" role="status"></div>
+                    </button>
+                </div>
+    
+                </div>
+                </div>
+            </div>
+     </section>
+    
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModallLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header rounded">
+                  <h6 class="modal-title" id="errorModallLabel">User tidak ditemukan / ulangi lagi</h6>
+                  <i class="lni lni-close" style="cursor: pointer;" data-bs-dismiss="modal" aria-label="Close"></i>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="modal fade" id="invalidModal" tabindex="-1" aria-labelledby="invalidModallLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header rounded">
+                  <h6 class="modal-title text-danger" id="invalidModallLabel">Mohon Lengkapi Datanya</h6>
+                  <i class="lni lni-close" style="cursor: pointer;" data-bs-dismiss="modal" aria-label="Close"></i>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+        <!-- Modal -->
+    <container>
+    <div class="modal fade" id="confrimModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="confrimModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confrimModalLabel">Silahkan Cek Data Pesanan</h5>
+                    <i class="lni lni-close"  data-bs-dismiss="modal" aria-label="Close"></i>
+                    <!--<i class="lni lni-close" onClick="window.location.reload();" aria-label="Close"></i>-->
+                </div>
+                <div class="modal-body">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>ID(Server)</td>
+                            <td width='3px'>: </td>
+                            <td id="info2"></td>
+                        </tr>
+                                            <tr>
+                            <td>Nick</td>
+                            <td width='3px'>: </td>
+                            <td id="info3"></td>
+                        </tr>
+                                            <tr>
+                            <td>Sisa DM</td>
+                            <td width='3px'>: </td>
+                            <td id="infosisa"></td>
+                        </tr>
+                        <tr>
+                            <td>Order</td>
+                            <td width='3px'>: </td>
+                            <td id="info4"></td>
+                        </tr>
+                        <tr>
+                            <td>Harga</td>
+                            <td width='3px'>: </td>
+                            <td id="info5"></td>
+                        </tr>
+                        <tr>
+                            <td>Pembayaran</td>
+                            <td width='3px'>: </td>
+                            <td id="info6"></td>
+                         </tr>
+                    </table>
+                    <p id="info7"></p>
+                </div>
+                 <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>-->
+                    <a onClick="window.location.reload();">Batal </a>
+                    <button type="button" class="btn btn-purple" id="send">Lanjutkan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--CODE SCRIPT-->
+    <script src="https://zeeshopgaming.com/assets/js/bootstrap.min.js"></script>
+    <script src="https://zeeshopgaming.com/assets/js/main.js"></script>
+    <script src="https://zeeshopgaming.com/assets/js//jquery-3.5.1.min.js"></script>
+    
+    <script src="https://zeeshopgaming.com/sw.js"></script>
+    
+    <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(res => console.log("service worker registered"))
+          .catch(err => console.log("service worker not registered", err))
+      })
+    }
+    </script>
+    <script src="https://zeeshopgaming.com//assets/js/savy.min.js"></script> 
+    
+    <script>
+    
+        $('.auto-save').savy('load');  
+        
+        function remove_small(small){
+          if($(small).hasClass('d-none')){
+              $(small).removeClass('d-none');
+          }else{
+              $(small).addClass('d-none');
+          }
+        }
+        
+        function number(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+        }
+    
+        $('.paket').click(function() {
+        $('.paket').removeClass('bg-light-purple paket-active');
+        $(this).addClass('bg-light-purple paket-active');
+    
+        let price_bank = $(this).data('price_bank');
+        let price_ewallet = $(this).data('price_ewallet');
+        let price_pulsa = $(this).data('price_pulsa');
+    
+        $(".price_bank").each(function() {
+        $(this).html('Rp ' + number(price_bank));
+        });
+    
+        $(".price_ewallet").each(function() {
+        $(this).html('Rp ' + number(price_ewallet));
+        });
+        
+        if(price_ewallet < '20000'){
+        $('#accordion-minimarket').addClass('d-none');
+        }else{
+        $('#accordion-minimarket').removeClass('d-none');
+        }   
+    
+        $(".price_pulsa").each(function() {
+        $(this).html('Rp ' + number(price_pulsa));
+        });
+    
+        $(".payment_bank").each(function() {
+        let total = $(this).data('adjs') + price_bank;
+        $(this).attr('data-total', total);
+        });
+    
+        $(".payment_ewallet").each(function() {
+        let total = $(this).data('adjs') + price_ewallet;
+        $(this).attr('data-total', total);
+        });
+    
+        $(".payment_pulsa").each(function() {
+        let total = $(this).data('adjs') + price_pulsa;
+        $(this).attr('data-total', total);
+        });
+    
+        $('.payment').addClass('text-dark');
+        });
+    
+        $('.payment').click(function() {
+            if ($('.paket-active')[0]) {
+            $('.payment').removeClass('bg-light-purple payment-active');
+                $(this).addClass('bg-light-purple payment-active');
+            }
+        });
+    
+        $('#confirm').click(function() {
+          
+    
+                
+        if ($('.payment-active')[0] && $('.paket-active')[0] && $('#id').val() != '' && $('#server').val() != '' ) {
+        
+                        
+            $.ajax({url: "https://api-xyz.com/trueid/mobilelegends/?id=" + encodeURI($('#id').val()) + "&zone=" + encodeURI($('#server').val()) + "&token=NguyenThuWan", success: function(data){
+            $('#loading').hide();;
+                            
+        var nama_akun = data.nickname;
+        var tipe_akun = data.userid;
+         
+            if (data.result.status == "200") {
+            $('#userinfo').attr('data-user',  nama_akun );
+            $('#tipeakun').attr('data-tipeakun',  tipe_akun );
+            $('#confrimModal').modal('show');
+            }
+                            
+            else if(data.result.status == "404") {
+            $('#errorModal').modal('show');
+            }
+            },
+            
+            error: function(data) {
+            $('#loading').hide();
+            $('#errorModal').modal('show');
+            }
+            });
+                   
+                        
+                         
+        } else {
+            $('#invalidModal').modal('show');
+            }
+        });
+    
+            $('#confrimModal').on('shown.bs.modal', function() {
+            $('#info1').html('Mobile Legend');
+            $('#info2').html($('#id').val() + '(' + $('#server').val() + ')');
+            $('#infosisa').html($('#sisa').val());
+            $('#info3').html($('#userinfo').data('user'));
+            $('#infoxx').html($('#tipeakun').data('tipeakun'));
+            $('#info4').html($('.paket-active').data('name'));
+            $('#info5').html('Rp ' + number($('.payment-active').data('total')));
+            $('#info6').html($('.payment-active').data('name'));
+    
+        if (($('.payment-active').data('name')) == 'KODE QR' || ($('.payment-active').data('name')) == 'SHOPEE PAY' || ($('.payment-active').data('name')) == 'OVO' || ($('.payment-active').data('name')) == 'DANA' || ($('.payment-active').data('name')) == 'GOPAY' || ($('.payment-active').data('name')) == 'LINKAJA') {
+            
+                    $('#info7').html('<center><img src="https://i.ibb.co/4KmpSKb/QRme.jpg" width="60%"/><br /><br />Silakan Scan KODE QR ini</center>');         
+                 
+            return;
+             }
+        });
+    
+       
+    $('#send').click(function() {
+    
+            let game_name;
+            let id;
+            let server;
+            let nick;
+            let nick_name;
+            let sisadm;
+            id = encodeURI($('#id').val());
+            nick = encodeURI($('#userinfo').data('user'));
+            server = encodeURI($('#server').val())
+            region = encodeURI($('#tipeakun').data('tipeakun'));
+            sisadm = encodeURI($('#sisa').val());
+            if (game == 'ml') { game_name = 'MOBILE%20LEGENDS'; }
+            if (game == 'mlx') { game_name = 'Mobile%20Legends%20Bang%20Bang'; }
+            if (game == 'giftskin') { game_name = 'Gift%20Skin'; }
+            if (game == 'charisma') { game_name = 'Charisma%20Popularity'; }
+            if (game == 'twilight') { game_name = 'Twilight%20Pass'; }
+            if (game == 'supermurah') { game_name = 'Diamond%20Slow'; }
+            if (game == 'chou') { game_name = 'PO%20Chou%20HERO'; }
+            if (game == 'mlpromo') { game_name = 'Diamond Semi Fast'; }
+            if (game == 'sljan') { game_name = 'SL Januari'; }
+            if (game == 'limited') { game_name = 'Skin Limited'; }
+            if (game == 'sun') { game_name = 'Sun - Lunar Fest'; }
+            if (game == 'yin') { game_name = 'Yin - Martial Genius'; }
+            if (game == 'aurora') { game_name = 'Aurora Zodiac'; }
+            if (game == 'aspirants') { game_name = 'MLBB x Aspirants'; }
+            if (game == 'slfeb') { game_name = 'Starlight Feb'; }
+            if (game == 'slfebaria') { game_name = 'PO SL Feb X Aria M'; }
+            if (game == 'slfebnafi') { game_name = 'PO SL Feb X Nafi Gaming'; }
+            if (game == 'tokenasp') { game_name = 'Token Aspirants'; }
+            if (game == 'freya') { game_name = 'PO Freya S.A.B.E.R'; }
+                    
+            let tipe_bayar = $('.payment-active').data('name');
+                               
+            let paket = encodeURI($('.paket-active').data('name'));
+            paket = paket.replace(/Bonus/g,'%2B');
+            let total = number($('.payment-active').data('total'));
+            
+            if((tipe_bayar=="INDOMARET") || (tipe_bayar=="ALFAMART")){ 
+            total = total.replace(/000/g,'xxx'); }
+            
+            let payment = encodeURI($('.payment-active').data('payment'));
+            function text(game_name, id, paket, total, payment) {
+    
+                    return `*Jawab Otomatis*
+                    %0A*FORMAT ORDER MOBILE LEGEND*
+                    %0A%0A*NICK*                   : ${nick}
+                    %0A*ID*                        : ${id}
+                    %0A*SERVER*              : ${server}
+                    %0A*Jumlah Order*     : ${paket}
+                    %0A*Sisa diamond*     : ${sisadm}
+                    %0A*Harga*                 : Rp. *${total}*
+                    %0A*Pembayaran via* : ${payment}
+                    %0A%0A▬▬▬▬▬▬▬ஜ۩۩ஜ▬▬▬▬▬▬▬
+                    %0A*NOTE :*
+                    %0A*JIKA TERJADI KESALAHAN ID DAN SERVER KARENA KESALAHAN ANDA, MAKA BUKAN TANGGUNG JAWAB ADMIN* 
+    `; }   
+            
+            if((tipe_bayar!="BRI") && (tipe_bayar!="MANDIRI") && (tipe_bayar!="BNI") && (tipe_bayar!="XL")  && (tipe_bayar!="KOSONG") && (tipe_bayar!="ALFAMART")) {        window.open("https://api.whatsapp.com/send/?phone=62895375950107&text=" + text(game_name, id, paket, total, payment));
+            }
+            
+            if((tipe_bayar=="BRI") || (tipe_bayar=="BRI") || (tipe_bayar=="MANDIRI") || (tipe_bayar=="BNI") || (tipe_bayar=="XL") || (tipe_bayar=="ALFAMART")) {        window.open("https://api.whatsapp.com/send/?phone=62895375950107&text=" + text(game_name, id, paket, total, payment));
+            }
+    
+            if((tipe_bayar=="KOSONG") || (tipe_bayar=="KOSONG")  || (tipe_bayar=="KOSONG")) {        window.open("https://api.whatsapp.com/send/?phone=62895375950107&text=" + text(game_name, id, paket, total, payment));
+            }
+        
+        
+            });
+            
+    </script>
+    </container>                         
+                
+    <!-- TOPUP Mobile Legends -->
+</body>
