@@ -2026,12 +2026,13 @@ router.get('/wallpaper/cyberspace', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/CyberSpace.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/image/wallpaper/wallpaper3.json`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
-             res.json({
-                 result
+            var result = data;
+            var dataa = result[Math.floor((Math.random() * result.length))]
+                 res.json({
+                     dataa
              })
          })
          .catch(e => {
@@ -2046,12 +2047,13 @@ router.get('/wallpaper/teknologi', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Technology.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/image/wallpaper/wallpaper2.json`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
-             res.json({
-                 result
+            var result = data;
+            var dataa = result[Math.floor((Math.random() * result.length))]
+                 res.json({
+                     dataa
              })
          })
          .catch(e => {
@@ -2088,12 +2090,13 @@ router.get('/wallpaper/programming', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Programming.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/image/wallpaper/wallpaper.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
+        var dataa = result[Math.floor((Math.random() * result.length))]
              res.json({
-                 result
+                 dataa
              })
          })
          .catch(e => {
@@ -2108,12 +2111,13 @@ router.get('/wallpaper/pegunungan', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Mountain.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/image/wallpaper/wallpaper5.json`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
-             res.json({
-                 result
+            var result = data;
+            var dataa = result[Math.floor((Math.random() * result.length))]
+                 res.json({
+                     dataa
              })
          })
          .catch(e => {
@@ -2406,7 +2410,7 @@ router.get('/infocuaca', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 	if(!provinsi) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter provinsi"})
-       fetch(encodeURI(`https://bmkg-api-moexti.herokuapp.com/api/cuaca/${provinsi}`))
+       fetch(encodeURI(`https://feriirawan-api.herokuapp.com/list/symbols/province/${provinsi}`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2483,10 +2487,10 @@ router.get('/random/meme', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://docs-api-moextir.herokuapp.com/api/meme`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/image/meme.json`))
         .then(response => response.json())
         .then(data => {
-        var result = data;
+        var result = data.meme[Math.floor(Math.random() * data.meme.length)];
              res.json({
                  result
              })
