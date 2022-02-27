@@ -269,7 +269,7 @@ router.get('/remove', (req, res, next) => {
 })
 /*
 =====> GACHA CECAN <=====
-*/
+
 router.get('/china', async (req, res, next) => {
   var apikeyInput = req.query.apikey;
   if(!apikeyInput) return res.json(loghandler.notparam)
@@ -283,12 +283,12 @@ router.get('/china', async (req, res, next) => {
   } else { 
     res.json(loghandler.invalidKey)
   }
-})
+})*/
 router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/vietnam.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/vietnam.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -306,7 +306,7 @@ router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/thailand.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -324,7 +324,7 @@ router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/china.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/china.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -342,7 +342,7 @@ router.get('/cewe/indonesia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/indonesia.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/indonesia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -360,7 +360,7 @@ router.get('/cewe/korea', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/korea.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/korea.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -378,7 +378,7 @@ router.get('/cewe/japan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/japan.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/japan.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -396,7 +396,7 @@ router.get('/cewe/malaysia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/malaysia.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/malaysia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -434,7 +434,7 @@ router.get('/asupan/hijaber', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/hijaber.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/cecan/hijaber.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -454,7 +454,7 @@ router.get('/asupan', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan.js`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/video/asupantiktok.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -475,7 +475,7 @@ router.get('/asupan/rikagusriani', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan/rikagusriani.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/video/rikagusriani.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -496,7 +496,7 @@ router.get('/asupan/santuy', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/santuy.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/video/santuy.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -517,7 +517,7 @@ router.get('/asupan/ukty', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/ukhty.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/video/ukhty.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -538,7 +538,7 @@ router.get('/asupan/bocil', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/bocil.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/video/bocil.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -559,7 +559,7 @@ router.get('/asupan/ghea', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/geayubi.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/asupan/video/gheayubi.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -582,7 +582,7 @@ router.get('/nsfw/ass', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ass.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/ass.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -603,7 +603,7 @@ router.get('/nsfw/ahegao', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ahegao.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/ahegao.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -624,7 +624,7 @@ router.get('/nsfw/bdsm', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/bdsm.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/bdsm.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -645,7 +645,7 @@ router.get('/nsfw/blowjob', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/blowjob.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/blowjob.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -666,7 +666,7 @@ router.get('/nsfw/cuckold', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/cuckold.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/cuckold.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -687,7 +687,7 @@ router.get('/nsfw/cum', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/cum.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/cum.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -708,7 +708,7 @@ router.get('/nsfw/ero', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ero.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/ero.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -729,7 +729,7 @@ router.get('/nsfw/femdom', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/femdom.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/femdom.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -750,7 +750,7 @@ router.get('/nsfw/foot', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/foot.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/foot.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -771,7 +771,7 @@ router.get('/nsfw/gangbang', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/gangbang.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/gangbang.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -792,7 +792,7 @@ router.get('/nsfw/glasses', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/glasses.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/glasses.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -813,7 +813,7 @@ router.get('/nsfw/hentai', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/hentai.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/hentai.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -834,7 +834,7 @@ router.get('/nsfw/hentaigif', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/hnt_gifs.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/hnt_gifs.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -855,7 +855,7 @@ router.get('/nsfw/jahy', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/jahy.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/jahy.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -876,7 +876,7 @@ router.get('/nsfw/masturbation', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/masturbation.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/masturbation.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -897,7 +897,7 @@ router.get('/nsfw/nsfwNeko', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/nsfwNeko.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/nsfwNeko.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -918,7 +918,7 @@ router.get('/nsfw/orgy', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/orgy.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/orgy.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -939,7 +939,7 @@ router.get('/nsfw/panties', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/panties.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/panties.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -960,7 +960,7 @@ router.get('/nsfw/pussy', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/pussy.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/pussy.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -981,7 +981,7 @@ router.get('/nsfw/thighs', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/thighs.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/thighs.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -1002,7 +1002,7 @@ router.get('/nsfw/yuri', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/yuri.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/anime/nsfw/yuri.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2263,7 +2263,7 @@ router.get('/liriklagu', async (req, res, next) => {
 	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
         if(!lagu) return res.json({ status : false, creator : `${creator}`, message : "Masukkan parameter kata"})
 
-       fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/lirik?search=${lagu}`))
+       fetch(encodeURI(`https://some-random-api.ml/lyrics?title=${lagu}`))
         .then(response => response.json())
         .then(data => {
         var result = data;

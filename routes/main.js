@@ -25,6 +25,10 @@ router.get('/mlbb/kalkulatormw', (req, res) => {
 router.get('/mlbb/kalkulatormz', (req, res) => {
     res.sendFile(__path + '/views/topup/kalkulatormz.html')
 })   
+router.get('/ff/topup', (req, res) => {
+    res.sendFile(__path + '/views/topup/ff.html')
+})
+
 
 router.get('/api/news', (req, res) => {
     res.redirect('https://api-berita-indonesia.vercel.app/cnn/terbaru')
