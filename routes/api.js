@@ -267,6 +267,52 @@ router.get('/remove', (req, res, next) => {
         res.json(loghandler.error)
     }
 })
+
+
+
+//<-----QUOTES----->
+
+router.get('/randomquote', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
+
+       fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/randomquotes`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+
+router.get('/quotes/', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+	if(!apikeyInput) return res.json(loghandler.notparam)	
+	if (apikeyInput != 'berkahesport')  return res.json(loghandler.invalidKey)
+       fetch(encodeURI(`https://raw.githubusercontent.com/BerkahEsport/api-be/main/lib/kata-kata/quotes.json`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+        var result = data[Math.floor(Math.random() * data.length)];
+             res.json({
+             	author: '@moexti',
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+
 /*
 =====> GACHA CECAN <=====
 
@@ -575,7 +621,9 @@ router.get('/asupan/ghea', async (req, res, next) => {
 })
 //End Asupan
 
-//NSFW
+
+
+//<------NSFW------>
 router.get('/nsfw/ass', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
@@ -1017,6 +1065,11 @@ router.get('/nsfw/yuri', async (req, res, next) => {
 })
 })
 ///NSFW END
+
+
+
+
+//<-----DOWNLOAD------>
 router.get('/tiktod', async (req, res, next) => {
     var apikeyInput = req.query.apikey,
         url = req.query.url
@@ -1066,25 +1119,6 @@ router.get('/tiktod/stalk', async (req, res, next) => {
          })
 })
 
-router.get('/randomquote', async (req, res, next) => {
-        var apikeyInput = req.query.apikey
-            
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'berkahesport') return res.json(loghandler.invalidKey)
-
-       fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/randomquotes`))
-        .then(response => response.json())
-        .then(data => {
-        var result = data;
-             res.json({
-                 creator : `${creator}`,
-                 result
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-})
-})
 
 
 router.get('/infonpm', async (req, res, next) => {
